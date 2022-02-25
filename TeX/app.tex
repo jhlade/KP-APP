@@ -1,0 +1,137 @@
+%-------------------------------------------------------------------------------
+% ABSOLVENTSKÁ PÍSEMNÁ PRÁCE
+%-------------------------------------------------------------------------------
+
+\documentclass[12pt,a4paper,oneside]{report}
+
+%-------------------------------------------------------------------------------
+% KONFIGURACE PRÁCE
+%-------------------------------------------------------------------------------
+
+% základní konfigurace a balíčky
+\input{template}
+
+%-------------------------------------------------------------------------------
+% ZAČÁTEK DOKUMENTU
+%-------------------------------------------------------------------------------
+
+\begin{document}
+
+%-------------------------------------------------------------------------------
+% TITULNÍ STRÁNKA
+%-------------------------------------------------------------------------------
+
+\input{./struktura/titulni-list}
+
+%-------------------------------------------------------------------------------
+% PROHLÁŠENÍ
+%-------------------------------------------------------------------------------
+
+\input{./struktura/prohlaseni}
+
+%-------------------------------------------------------------------------------
+% PODĚKOVÁNÍ
+%-------------------------------------------------------------------------------
+
+\input{./struktura/podekovani}
+
+%-------------------------------------------------------------------------------
+% OBSAH A SEZNAM PŘÍLOH
+%-------------------------------------------------------------------------------
+
+\pagestyle{StyleBase}
+\setcounter{tocdepth}{3}
+
+% obsah
+\addtocontents{toc}{\protect\thispagestyle{StyleBlank}}
+\tableofcontents
+
+% seznam příloh
+
+%-------------------------------------------------------------------------------
+% VLASTNÍ TEXT PRÁCE
+%-------------------------------------------------------------------------------
+
+% Úvod -------------------------------------------------------------------------
+\nadpisBezCisla{Úvod}
+\setcounter{page}{1}
+
+\noindent
+Úvod předkládá metodologickou a~koncepční charakteristiku práce.
+
+% Práce ------------------------------------------------------------------------
+
+\nadpis{První nadpis}
+
+\noindent
+Nadpisy první úrovně automaticky začínají na nové straně.
+Použití citace.~\cite{harry}
+
+\podnadpis{První podnadpis}
+\noindent Text.\footnote{Poznámka pod čarou.}
+
+\podpodnadpis{První podpodnadpis}
+\noindent Ukázka.
+
+\nadpis{Druhá kapitola}
+\noindent Text druhé kapitoly.
+
+\podnadpis{podnadpis 2.1}
+
+\podpodnadpis{podpodnadpis 2.1.1}
+
+\podnadpis{podnadpis 2.2}
+
+\podnadpis{podnadpis 2.3}
+
+\podpodnadpis{podpodnadpis 2.3.1}
+\podpodnadpis{podpodnadpis 2.3.2}
+\podpodnadpis{podpodnadpis 2.3.3}
+
+% Závěr ------------------------------------------------------------------------
+
+\nadpisBezCisla{Závěr}
+
+\noindent
+Závěr dává odpověď cíle, otázky a~úkoly stanovené v~Úvodu práce.
+
+%-------------------------------------------------------------------------------
+% SHRNUTÍ
+%-------------------------------------------------------------------------------
+
+\nadpisBezCisla{Shrnutí}
+\input{struktura/shrnuti}
+
+%-------------------------------------------------------------------------------
+% SHRNUTÍ V CIZÍM JAZYCE
+%-------------------------------------------------------------------------------
+
+\nadpisBezCisla{\shrnutiCizi}
+\input{./struktura/shrnuti-cizi}
+
+%-------------------------------------------------------------------------------
+% LITERATURA A ZDROJE
+%-------------------------------------------------------------------------------
+
+\cleardoublepage\phantomsection
+\addcontentsline{toc}{chapter}{Literatura a~dalšízdroje}
+
+% Literatura a další zdroje
+\begingroup
+	\printbibliography[title={Literatura a~další zdroje}]
+\endgroup
+
+\phantomsection
+
+\pagestyle{empty}
+\cleardoublepage
+
+%-------------------------------------------------------------------------------
+% PŘÍLOHY
+%-------------------------------------------------------------------------------
+
+%-------------------------------------------------------------------------------
+% KONEC DOKUMENTU
+%-------------------------------------------------------------------------------
+
+\end{document}
