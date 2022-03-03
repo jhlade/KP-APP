@@ -1,7 +1,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % metadata práce
-\input{metadata}
+\input{./metadata}
+
+% formát A4, jednostranně, základní velikost písma 12 bodů
+\documentclass[12pt,a4paper,oneside]{report}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -13,11 +16,11 @@
 \usepackage[main=czech]{babel} % čeština
 \usepackage{csquotes} % české uvozovky
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ------------------------------------------------------------------------------
 % LITERATURA A REFERENCE
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ------------------------------------------------------------------------------
 
-% literatura - ISO 690
+% literatura - CZ ISO 690
 \usepackage[
    backend=biber
   ,style=iso-numeric
@@ -36,7 +39,7 @@
 
 \addbibresource{./literatura.bib}
 
-% formátování seznamu zdrojů a literatury
+% formátování seznamu zdrojů a literatury - hranaté závorky
 \DeclareFieldFormat{labelnumberwidth}{[\,{#1}\,]}
 \defbibenvironment{bibliography}
   {\list
@@ -54,14 +57,17 @@
   {\endlist}
   {\item}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ------------------------------------------------------------------------------
 
 % přílohy
-\usepackage[titletoc]{appendix}
+%\usepackage[titletoc]{appendix}
+\usepackage{appendix}
 
-% tabulky a poznámky pod čarou
+% tabulky
 \usepackage{tabularx}
 \usepackage{makecell}
+
+% poznámky pod čarou
 \usepackage{footnote}
 
 % obrázky v textu
@@ -78,15 +84,27 @@
 % rámečky
 \usepackage{framed}
 
+% hypertext
+%\usepackage{xunicode,xltxtra,url,parskip}
+
+% předsazení odstavce
+\setlength{\parindent}{1.2cm}
+
+% zájlaví a zápatí
+\usepackage{fancyhdr}
+
 % barvy
 \usepackage{xcolor}
 
-% formátování a záhlaví
-\usepackage{xunicode,xltxtra,url,parskip}
-\setlength{\parindent}{1cm}
-\usepackage{fancyhdr}
+% změna záhlaví, hypertextové odkazy bez rámečků
+\usepackage{chngcntr}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+	colorlinks=false,
+	pdfborder={0 0 0},
+}
 
-% kreslení v TikZ
+% kreslení v TikZ - grafy, diagramy, obvody
 \usepackage{tikz,pgfplots}
 \pgfplotsset{compat=1.18}
 \usepackage[simplified]{pgf-umlcd}
@@ -99,18 +117,10 @@
 \usepackage{titlesec}
 \usepackage{setspace}
 
-% změna záhlaví, hypertextové odkazy bez rámečků
-\usepackage{chngcntr}
-\usepackage[hidelinks]{hyperref}
-\hypersetup{
-	colorlinks=false,
-	pdfborder={0 0 0},
-}
-
 % ovládání software, klávesnice
 \usepackage{menukeys}
 
-% vložené zdrojové kódy
+% vložené strojopisy
 \usepackage{verbatimbox}
 
 \makeatletter
@@ -125,7 +135,9 @@
 }
 \makeatother
 
-%%% STRÁNKA A KAPITOLY %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ------------------------------------------------------------------------------
+% STRÁNKA A KAPITOLY
+% ------------------------------------------------------------------------------
 
 % okraje stránky
 \usepackage[
@@ -139,6 +151,13 @@
 ]{geometry}
 
 %\renewcommand*\thechapter{\arabic{chapter}}
+
+% vodící čáry kapitol
+\usepackage{tocloft}
+\renewcommand\cftchapdotsep{\cftdotsep}%
+
+% tečka za číslem kapitoly v obsahu
+\renewcommand{\cftchapaftersnum}{.}%
 
 % číslování obrázků
 \counterwithin{figure}{chapter}
@@ -178,9 +197,6 @@
     \subsection{#1}
 }
 
-% kapitola vždy začíná na nové stránce
-%\AddToHook{cmd/section/before}{\clearpage}
-
 % výchozí záhlaví a zápatí stránky
 \lhead{}
 \rhead{}
@@ -201,7 +217,7 @@
 	\lhead{}
 	\rhead{}
 	\cfoot{\thepage}
-	\rfoot{Přílohy}
+	\rfoot{\textit{Přílohy}}
 }
 
 % prázdná stránka
@@ -214,7 +230,9 @@
 	\renewcommand{\headrulewidth}{0pt}
 }
 
-%%% VLASTNÍ PŘÍKAZY %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ------------------------------------------------------------------------------
+% VLASTNÍ PŘÍKAZY
+% ------------------------------------------------------------------------------
 
 % tečkovaná vodící čára pro podpisy
 \newcommand{\dotrule}[1]{%
@@ -233,17 +251,9 @@
 \def\doubleunderline#1{\underline{\underline{#1}}}
 
 % nota - tón
-\newcommand\note[1]{\xnote#1\relax\relax\relax}
+\newcommand\nota[1]{\xnote#1\relax\relax\relax}
 	\def\xnote#1#2#3\relax{#1\if#2\relax\else\if b#2$\flat\if#3\relax%
 	\else_{#3}\fi$\else\if###2$\sharp\if#3\relax\else_{#3}\fi$\else$_{#2}$\fi\fi\fi}
-
-% záporná nota
-\def\noteminus{%
-  \setbox0=\hbox{-}%
-  \vcenter{%
-    \hrule width\wd0 height \the\fontdimen8\textfont3%
-  }%
-}
 
 % volná, nečíslovaná stránka
 \newcommand\blankpage{%
@@ -258,8 +268,8 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% slovník
-\input{struktura/slovnik}
+% slovník zalamování
+\input{./struktura/slovnik}
 
 % PDF metadata
 \author{\autor}

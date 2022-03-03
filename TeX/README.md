@@ -3,8 +3,11 @@ základní orientace v&nbsp;syntaxi LaTeXu.
 
 <b>Organizace</b>
 * `metadata.tex` - prostředí s&nbsp;proměnnými daty
-* `app.tex` - základní dokument, do něj lze doplnit vlastní text (ať už vložením
-souborů, nebo přímo)
+* `app.tex` - základní dokument
+* `text-uvod.tex` - text úvodu práce
+* `text-prace.tex` - vlastní text práce
+* `text-zaver.tex` - text závěru práce
+* `prilohy.tex` - prostor pro přílohy
 * `literatura.bib` - seznam literatury ve&nbsp;formátu BibTeX
 * `struktura/podekovani.tex` - text poděkování, lze vypnout v&nbsp;základním
 dokumentu
@@ -12,6 +15,6 @@ dokumentu
 * `struktura/shrnuti-cizi.tex` - text anotace v&nbsp;cizím jazyce
 * `struktura/slovnik.tex` - slovník pro úpravu zalamování slov
 
-<b>Makefile</b>
+<b>Makefile</b><br>
 Překlad do PDF lze zajistit jednoduchým zavoláním `make`, konečný výsledek bude
 uložen jako `app.pdf`.
