@@ -1,4 +1,5 @@
 # APP Makefile
+TARGET=app
 
 TEX_BIN=xelatex
 BIB_BIN=biber
@@ -8,10 +9,10 @@ BIB_BIN=biber
 all: compile softclean
 
 compile:
-	${TEX_BIN} app
-	${BIB_BIN} app
-	${TEX_BIN} app
-	${TEX_BIN} app
+	${TEX_BIN} ${TARGET}
+	${BIB_BIN} ${TARGET}
+	${TEX_BIN} ${TARGET}
+	${TEX_BIN} ${TARGET}
 
 softclean:
 	rm -f *.out *.bbl *.bcf *.dvi *.ps \
