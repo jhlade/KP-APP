@@ -10,9 +10,6 @@
 
 \renewcommand{\baselinestretch}{1.2}
 
-\usepackage{pdfpages} % vnoření PDF
-\usepackage{newclude}
-
 \usepackage[main=czech]{babel} % čeština
 \usepackage{csquotes} % české uvozovky
 
@@ -26,11 +23,13 @@
   ,style=iso-numeric
   ,sortlocale=cs_CZ
   ,sorting=nyt
+  ,natbib=true
   ,maxnames=3
   ,minnames=3
   ,pagetotal=true
   ,autolang=other
   ,bibencoding=UTF8
+  ,url=false
   ,spacecolon=false % mezera před dvojtečkou
 ]{biblatex}
 
@@ -60,12 +59,11 @@
 % ------------------------------------------------------------------------------
 
 % přílohy
-%\usepackage[titletoc]{appendix}
 \usepackage{appendix}
 
 % tabulky
 \usepackage{tabularx}
-\usepackage{makecell}
+%\usepackage{makecell}
 
 % poznámky pod čarou
 \usepackage{footnote}
@@ -85,7 +83,7 @@
 \usepackage{framed}
 
 % hypertext
-%\usepackage{xunicode,xltxtra,url,parskip}
+\usepackage{xunicode,xltxtra,url,parskip}
 
 % předsazení odstavce
 \setlength{\parindent}{1.2cm}
@@ -94,10 +92,12 @@
 \usepackage{fancyhdr}
 
 % barvy
-\usepackage{xcolor}
+%\usepackage{xcolor}
 
-% změna záhlaví, hypertextové odkazy bez rámečků
+% změna záhlaví 
 \usepackage{chngcntr}
+
+% hypertextové odkazy bez rámečků
 \usepackage[hidelinks]{hyperref}
 \hypersetup{
 	colorlinks=false,
@@ -134,6 +134,10 @@
   \let\verbatim@processline\sv@verbatim@processline
 }
 \makeatother
+
+% vnoření PDF
+\usepackage{pdfpages}
+\usepackage{newclude}
 
 % ------------------------------------------------------------------------------
 % STRÁNKA A KAPITOLY
