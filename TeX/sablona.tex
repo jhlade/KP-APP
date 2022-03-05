@@ -1,15 +1,14 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% metadata práce
-\input{./metadata}
+% ------------------------------------------------------------------------------
+% PEVNÁ NASTAVENÍ - ŠABLONA APP KP
+% ------------------------------------------------------------------------------
 
 % formát A4, jednostranně, základní velikost písma 12 bodů
 \documentclass[12pt,a4paper,oneside]{report}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+% základní proklad 1.2
 \renewcommand{\baselinestretch}{1.2}
 
+% jazyk
 \usepackage[main=czech]{babel} % čeština
 \usepackage{csquotes} % české uvozovky
 
@@ -30,12 +29,13 @@
   ,autolang=other
   ,bibencoding=UTF8
   ,url=false
-  ,spacecolon=false % mezera před dvojtečkou
+  ,spacecolon=false % mezera před dvojtečkou (ISO 690:2011 2014)
 ]{biblatex}
 
 \setcounter{biburllcpenalty}{7000}
 \setcounter{biburlucpenalty}{8000}
 
+% zdroj literatury
 \addbibresource{./literatura.bib}
 
 % formátování seznamu zdrojů a literatury - hranaté závorky
@@ -57,6 +57,11 @@
   {\item}
 
 % ------------------------------------------------------------------------------
+% POUŽITELNÉ BALÍČKY
+% ------------------------------------------------------------------------------
+
+% výplňový text
+\usepackage{lipsum}
 
 % přílohy
 \usepackage{appendix}
@@ -87,12 +92,13 @@
 
 % předsazení odstavce
 \setlength{\parindent}{1.2cm}
+\setlength{\parskip}{12pt}
 
 % zájlaví a zápatí
 \usepackage{fancyhdr}
 
 % barvy
-%\usepackage{xcolor}
+\usepackage{xcolor}
 
 % změna záhlaví 
 \usepackage{chngcntr}
@@ -137,10 +143,9 @@
 
 % vnoření PDF
 \usepackage{pdfpages}
-\usepackage{newclude}
 
 % ------------------------------------------------------------------------------
-% STRÁNKA A KAPITOLY
+% STRÁNKA A4 - OKRAJE
 % ------------------------------------------------------------------------------
 
 % okraje stránky
@@ -149,12 +154,12 @@
   bottom=25mm,
   left=40mm,
   right=25mm,
-  %includehead,
-  includefoot,
-  heightrounded, % underfull zarovnání
+  heightrounded, 
 ]{geometry}
 
-%\renewcommand*\thechapter{\arabic{chapter}}
+% ------------------------------------------------------------------------------
+% OBSAH
+% ------------------------------------------------------------------------------
 
 % vodící čáry kapitol
 \usepackage{tocloft}
@@ -162,6 +167,45 @@
 
 % tečka za číslem kapitoly v obsahu
 \renewcommand{\cftchapaftersnum}{.}%
+
+% samostatný seznam příloh
+\usepackage{etoolbox, titlesec}
+\newcommand{\seznamPriloh}{Seznam příloh}
+\newlistof{appendix}{apc}{\seznamPriloh}
+
+\makeatletter
+\AtBeginEnvironment{appendices}{%
+  \clearpage
+  {\protect\pagestyle{StyleAppendix}}
+  \write\@auxout{%
+    \string\let\string\latex@tf@toc\string\tf@toc% 
+    \string\let\string\tf@toc\string\tf@apc% 
+  }%
+}
+\AtEndEnvironment{appendices}{%
+  \write\@auxout{%
+    \string\let\string\tf@toc\string\latex@tf@toc% 
+  }%
+}
+\makeatother
+
+% ------------------------------------------------------------------------------
+% STYL NADPISŮ
+% ------------------------------------------------------------------------------
+
+% nadpis kapitoly
+\titleformat{\chapter}{\bf\raggedright\Large}{\thechapter.~}{0em}{}
+\titlespacing*{\chapter}{0pt}{-32pt}{0pt}
+
+% podnadpis
+\titlespacing*{\section}{0pt}{0pt}{0pt}
+
+% podpodnadpis
+\titlespacing*{\subsection}{0pt}{0pt}{0pt}
+
+% ------------------------------------------------------------------------------
+% ČÍSLOVÁNÍ FIGUR
+% ------------------------------------------------------------------------------
 
 % číslování obrázků
 \counterwithin{figure}{chapter}
@@ -173,74 +217,24 @@
 % čísla tabulek
 \counterwithin{table}{section}
 
-% nadpis kapitoly
-\titleformat{\chapter}{\bf\raggedright\Large}{\thechapter.~}{0em}{}
-\titlespacing{\chapter}{0pt}{3pt}{3pt}
+% ------------------------------------------------------------------------------
+% PŘÍKAZY PRO NADPISY
+% ------------------------------------------------------------------------------
 
-% podnadpis
-%\titleformat{\section}{\bf\raggedright\large}{\thechapter.\thesection.~}{0em}{}
-\titlespacing{\section}{0pt}{3pt}{3pt}
-
-% podpodnadpis
-%\titleformat{\subsection}{\bf\raggedright}{\thechapter.\thesubsection.~}{0em}{}
-
-% podpodnadpis
-%\titleformat{\subsubsection}{\bf\raggedright}{\thesubsubsection.~}{0em}{}
-%\titlespacing{\subsubsection}{0pt}{3pt}{3pt}
-
-% příkazy
+% nadpis první úrovně
 \newcommand{\nadpis}[1]{
     \chapter{#1}
 }
 
+% nadpis druhé úrovně
 \newcommand{\podnadpis}[1]{
     \section{#1}
 }
 
+% nadpis třetí úrovně
 \newcommand{\podpodnadpis}[1]{
     \subsection{#1}
 }
-
-% výchozí záhlaví a zápatí stránky
-\lhead{}
-\rhead{}
-\cfoot{}
-
-% základní styl
-\fancypagestyle{StyleBase} {
-	\fancyhf{}
-	\lhead{}
-	\rhead{}
-	\cfoot{\thepage}
-	\rfoot{}
-}
-
-% styl příloh
-\fancypagestyle{StyleAppendix} {
-	\fancyhf{}
-	\lhead{}
-	\rhead{}
-	\cfoot{\thepage}
-	\rfoot{\textit{Přílohy}}
-}
-
-% prázdná stránka
-\fancypagestyle{StyleBlank} {
-	\fancyhf{}
-	\lhead{}
-	\rhead{}
-	\cfoot{}
-	\rfoot{}
-	\renewcommand{\headrulewidth}{0pt}
-}
-
-% ------------------------------------------------------------------------------
-% VLASTNÍ PŘÍKAZY
-% ------------------------------------------------------------------------------
-
-% tečkovaná vodící čára pro podpisy
-\newcommand{\dotrule}[1]{%
-   \parbox[t]{#1}{\dotfill}}
 
 % nadpis bez čísel
 \newcommand{\nadpisBezCisla}[1]{
@@ -250,6 +244,50 @@
     \chapter*{#1}
     \addcontentsline{toc}{chapter}{#1}
 }
+
+% nadpis pro přílohy
+\newcommand{\priloha}[1]{
+    \chapter{#1}
+    \thispagestyle{StyleAppendix}
+    \pagestyle{StyleAppendix}
+}
+
+% ------------------------------------------------------------------------------
+% ZÁHLAVÍ A ZÁPATÍ STRÁNEK
+% ------------------------------------------------------------------------------
+
+% výchozí záhlaví a zápatí stránky
+\lhead{}
+\rhead{}
+\cfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% základní styl stránky - číslo v zápatí uprostřed
+\fancypagestyle{StyleBase} {
+	\fancyhf{}
+	\lhead{}
+	\rhead{}
+	\cfoot{\thepage}
+	\rfoot{}
+}
+
+% styl příloh - přidáno "Přílohy" v zápatí vpravo
+\fancypagestyle{StyleAppendix} {
+	\fancyhf{}
+	\lhead{}
+	\rhead{}
+	\cfoot{\thepage}
+	\rfoot{\textit{Přílohy}}
+}
+
+% ------------------------------------------------------------------------------
+% JINÉ VLASTNÍ PŘÍKAZY
+% ------------------------------------------------------------------------------
+
+% tečkovaná vodící čára pro podpisy
+\newcommand{\dotrule}[1]{%
+   \parbox[t]{#1}{\dotfill}}
 
 % dvojité podtržení
 \def\doubleunderline#1{\underline{\underline{#1}}}
@@ -270,10 +308,16 @@
 
 \newlength\longest
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ------------------------------------------------------------------------------
+% SLOVNÍK ZALAMOVÁNÍ SLOV
+% ------------------------------------------------------------------------------
 
 % slovník zalamování
 \input{./struktura/slovnik}
+
+% ------------------------------------------------------------------------------
+% NASTAVENÍ VÝSLEDNÉHO PDF
+% ------------------------------------------------------------------------------
 
 % PDF metadata
 \author{\autor}
@@ -283,4 +327,3 @@
     pdfsubject={Absolventská písemná práce {\skolniRok}},
     pdftitle={\appTema}
 }
-

@@ -7,6 +7,9 @@
 % KONFIGURACE PRÁCE
 %-------------------------------------------------------------------------------
 
+% metadata práce
+\input{./metadata}
+
 % základní konfigurace a balíčky
 \input{./sablona}
 
@@ -17,19 +20,19 @@
 \begin{document}
 
 %-------------------------------------------------------------------------------
-% TITULNÍ STRÁNKA
+% TITULNÍ LIST
 %-------------------------------------------------------------------------------
 
 \input{./struktura/titulni-list}
 
 %-------------------------------------------------------------------------------
-% PROHLÁŠENÍ
+% PROHLÁŠENÍ O SAMOSTATNOSTI
 %-------------------------------------------------------------------------------
 
 \input{./struktura/prohlaseni}
 
 %-------------------------------------------------------------------------------
-% PODĚKOVÁNÍ
+% PODĚKOVÁNÍ (nepovinné)
 %-------------------------------------------------------------------------------
 
 \input{./struktura/podekovani}
@@ -38,18 +41,23 @@
 % OBSAH A SEZNAM PŘÍLOH
 %-------------------------------------------------------------------------------
 
-\pagestyle{StyleBase}
 \setcounter{tocdepth}{3}
 
 % obsah
-\addtocontents{toc}{\protect\thispagestyle{StyleBlank}}
+\addtocontents{toc}{\protect\thispagestyle{empty}}
 \tableofcontents
 
-% TODO samostatný seznam příloh
+% samostatný seznam příloh na nové straně
+\newpage
+\addtocontents{apc}{\protect\thispagestyle{empty}}
+\listofappendix
 
 %-------------------------------------------------------------------------------
 % VLASTNÍ TEXT PRÁCE
 %-------------------------------------------------------------------------------
+
+\clearpage
+\pagestyle{StyleBase}
 
 % Úvod -------------------------------------------------------------------------
 \nadpisBezCisla{Úvod}
@@ -80,10 +88,11 @@
 \input{./struktura/shrnuti-cizi}
 
 %-------------------------------------------------------------------------------
-% LITERATURA A ZDROJE
+% LITERATURA A DALŠÍ ZDROJE
 %-------------------------------------------------------------------------------
 
-\cleardoublepage\phantomsection
+\clearpage
+\phantomsection
 \addcontentsline{toc}{chapter}{Literatura a~další zdroje}
 
 % Literatura a další zdroje
@@ -91,16 +100,11 @@
 	\printbibliography[title={Literatura a~další zdroje}]
 \endgroup
 
-\phantomsection
-
-\pagestyle{empty}
-\cleardoublepage
-
 %-------------------------------------------------------------------------------
 % PŘÍLOHY
 %-------------------------------------------------------------------------------
 
-% pokud nejsou žádné přílohy, vstup lze zakomentovat
+% pokud nejsou žádné přílohy, vstup lze zakomentovat (spolu se seznamem příloh)
 \input{./prilohy}
 
 %-------------------------------------------------------------------------------
