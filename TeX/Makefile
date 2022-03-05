@@ -17,7 +17,7 @@ compile:
 softclean:
 	rm -f *.out *.bbl *.bcf *.dvi *.ps \
 	*.log *.lof *.aux *.blg *.loa *.lot \
-	*.toc *.run.xml
+	*.toc *.apc *.run.xml
 
 clean: softclean
 	rm -f *.pdf
