@@ -245,6 +245,14 @@
     \addcontentsline{toc}{chapter}{#1}
 }
 
+% podnadpis bez čísel
+\newcommand{\podnadpisBezCisla}[1]{
+    \setcounter{chapter}{0}
+    \setcounter{section}{0}
+    \section*{#1}
+    \addcontentsline{toc}{section}{#1}
+}
+
 % nadpis pro přílohy
 \newcommand{\priloha}[1]{
     \chapter{#1}
