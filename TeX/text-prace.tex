@@ -1,12 +1,79 @@
-\nadpis{První nadpis}
+\nadpis{Šablona a~formální požadavky APP}
+Kompletní požadavky k~absolventským písemným pracím shrnuje směrnice
+Konzervatoře Pardubice č.~5/19, jejíž plné znění je k~dispozici na webových
+stránkách školy v~nabídce \textit{Studium – Absolutorium}.
+ 
+Šablona si klade za cíl zjednodušit formální stránku práce, aby měli autoři
+více času na samotný obsah.
 
-\noindent
+
 Nadpisy první úrovně automaticky začínají na nové straně.
 Použití citace.~\cite{harry}
 
-\podnadpis{První podnadpis}
-\noindent Text.\footnote{Poznámka pod čarou.} Nota \nota{Fb}
 
+\podnadpis{Doporučená minimální struktura práce}
+Základní struktura absolventské práce udává zejména závazné pořadí nečíslovaných
+oddílů a kapitol, které se nacházejí mimo vlastní text práce. Mezi základní
+požadované prvky patří \textit{Titulní strana}, \textit{Prohlášení
+o~samostatnosti}, \textit{Obsah}, \textit{Úvod}, vlastní text práce,
+\textit{Závěr}, \textit{Shrnutí}, \textit{Shrnutí v~cizím jazyce},
+\textit{Seznam literatury} a~přílohy.\footnote{Všechny zmíněné části jsou
+v~předkládaných šablonách již předpřipraveny}
+
+\podnadpis{Rozsah práce}
+Minimálním rozsahem práce se rozumí nejnižší možný počet stran vlastního textu,
+obvykle od~\textit{Úvodu} po konec \textit{Závěru}, udávaný v~normostranách.
+Pojem normostrana je definován jako strojopis 30 řádků po 60 úhozech, tedy
+přesně 1\,800 znaků včetně mezer. Šablony jsou koncipovány tak, aby v~nich psaná
+jedna strana A4 odpovídala přibližně 1\,400~–~2\,400 úhozům, což je přibližně
+v~rozsahu ±30~\% normostrany.
+
+Do rozsahu vlastního textu se dále také počítají textové přílohy, ale pouze
+jsou-li autorským dílem (např.~provedené rozhovory). V~této ukázce je jako
+příklad první přílohy přepis korespondence, který autorským dílem \textit{není}.
+
+Pro APP je minimální hranicí 20 stran textu, samozřejmě je lépe, je-li stran
+napsáno více, optimum bude cca na 22-25 tiskových stranách. Horní hranici je
+nutné konzultovat s~vedoucím práce, rozsah by však neměl být zbytečně objemný.
+
+\podnadpis{Formální úprava}
+Požadavky na formální úpravu zahrnují především vzhled stránky, vše je již
+obsaženo v této šabloně. Zejména se jedná o~formát papíru A4, okraje stránky
+po 2,5~cm shora, zespodu a~zprava, levý okraj 4~cm.  Formální úprava dále
+specifikuje velikost písma a~proklad řádkování vlastního textu, způsob číslování
+a~umístění kapitol, stránek a~příloh.
+
+\podnadpis{Forma odevzdání}
+Práce se odevzdává výhradně ve~formátu PDF (Portable Document Format). PDF
+soubor \texttt{app.pdf} vznikne automaticky překladem v~prostředí \XeLaTeX
+jednoduchým zavoláním \texttt{make}.
+
+% ------------------------------------------------------------------------------
+\nadpis{Nadpis první úrovně}
+Číslovaný nadpis první úrovně lze realizovat příkazem
+\texttt{{\textbackslash}nadpis\{Text nadpisu\}}. První úroveň nadpisu otevírá
+každou hlavní kapitolu práce se~samostatným tematickým celkem a~vždy začíná
+na~nové stránce. Nadpis hlavní kapitoly nikdy nemůže okamžitě navazovat na~dílčí
+podnadpisy, musí za~ním stát krátký odstavec stručně charakterizující další
+obsah.
+
+\podnadpis{Nadpis druhé úrovně}
+Číslovaný nadpis druhé úrovně je k~dispozici pod~příkazem
+\texttt{{\textbackslash}podnadpis\{Text podnadpisu\}}. Druhá úroveň člení každou
+kapitolu na~její stěžejní body a~obvykle se zde nachází nejvíce odstavců textu.
+
+\podpodnadpis{Nadpis třetí úrovně}
+Nadpis třetí úrovně je uveden příkazem
+\texttt{{\textbackslash}podpodnadpis\{Text podpodnadpisu\}}. Závěrečné práce by
+neměly přesáhnout tři úrovně členění textu a~třetí úroveň je obecně vhodné
+věnovat pro~popisy konkrétních případů, které obecně zahrnuje nadpis druhé
+úrovně (př.~\textit{1 - Hudba}, \textit{2 - Hudební nástroje}, \textit{3 -
+Smyčcové nástroje}).
+
+\podnadpis{Jiné objekty}
+Harry Potter nikdy nevydal tón \nota{Eb2}, natož \nota{C#6}, přestože o~tom
+v~knížce~\cite{harry} není ani slovo. Následující obrázek
+zachycuje logo školy.
 
 \begin{figure}[!ht]
 	\begin{center}
@@ -16,28 +83,24 @@ Použití citace.~\cite{harry}
 	\caption{Logo: Konzervatoř Pardubice}
 \end{figure}
 
-\begin{figure}[!ht]
-	\begin{center}
-		\includegraphics[width=30mm]{./obrazky/kp-logo.pdf}
-    \end{center}
+\noindent
+Po~obrázku, nebo na nové straně, je třeba manuálně zrušit automatické odsazování
+prvního řádku. \lipsum[5-7][12-22]
 
-	\caption{Mini logo: Konzervatoř Pardubice}
-\end{figure}
+\podnadpis{Podnadpis 2.3}
+\lipsum[5-7][12-22]
 
-\podpodnadpis{První podpodnadpis}
-\noindent Ukázka.
+\podpodnadpis{Podpodnadpis 2.3.1}
+\lipsum[5-7][12-22]
 
-\nadpis{Druhá kapitola}
-\noindent Text druhé kapitoly.
+\lipsum[5-7][12-22]
 
-\podnadpis{podnadpis 2.1}
+\podpodnadpis{Podpodnadpis 2.3.2}
+\lipsum[5-7][12-22]
 
-\podpodnadpis{podpodnadpis 2.1.1}
+\lipsum[5-7][12-22]
 
-\podnadpis{podnadpis 2.2}
+\podpodnadpis{Podpodnadpis 2.3.3}
+\lipsum[5-7][12-22]
 
-\podnadpis{podnadpis 2.3}
-
-\podpodnadpis{podpodnadpis 2.3.1}
-\podpodnadpis{podpodnadpis 2.3.2}
-\podpodnadpis{podpodnadpis 2.3.3}
+\lipsum[5-7][12-22]
