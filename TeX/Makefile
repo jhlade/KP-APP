@@ -6,7 +6,10 @@ BIB_BIN=biber
 
 .PHONY: all
 
-all: compile softclean
+all: cover compile softclean
+
+cover:
+	${TEX_BIN} ${TARGET}-desky
 
 compile:
 	${TEX_BIN} ${TARGET}

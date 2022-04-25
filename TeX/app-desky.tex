@@ -1,0 +1,51 @@
+%-------------------------------------------------------------------------------
+% ABSOLVENTSKÁ PÍSEMNÁ PRÁCE - DESKY
+%-------------------------------------------------------------------------------
+
+\documentclass[12pt,a4paper]{report}
+
+\usepackage[
+  top=25mm,
+  bottom=25mm,
+  left=30mm,
+  right=30mm,
+  heightrounded,
+]{geometry}
+
+\usepackage{tabularx}
+
+% metadata
+\input{metadata}
+
+\begin{document}
+\begin{titlepage}
+
+\begin{center}
+
+	\begin{Large}
+		\noindent
+		{\textbf{{\skola}}}
+	\end{Large}
+
+	\vfill
+
+	\begin{Large}
+		\noindent
+		{\textbf{\MakeUppercase{\typPrace}}}
+	\end{Large}
+
+\end{center}
+
+\vfill
+
+\noindent
+\begin{bfseries}
+\begin{large}
+\begin{tabularx}{\textwidth}{ X r }
+   \autor{}     & \misto{}~\skolniRok{} \\
+\end{tabularx}
+\end{large}
+\end{bfseries}
+
+\end{titlepage}
+\end{document}
