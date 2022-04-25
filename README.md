@@ -6,3 +6,10 @@ k&nbsp;nalezení v&nbsp;odpovídajících větvích.
 <b>Hlavní změny - březen 2022</b>
 * aktualizovaná šablona pro Microsoft Word
 * první ucelená šablona pro TeX
+
+<b>Drobné změny - duben 2022</b>
+* přidána minišablona vzoru desek pevné vazby - vhodné pro&nbsp;použití
+při&nbsp;vlastním zlatotisku; obyčejně stačí obsluze tiskárny pouze sdělit
+obsah horního řádku, prostředního řádku a&nbsp;jména autora v&nbsp;levé
+části a&nbsp;místa a&nbsp;roku odevzdání práce v&nbsp;pravé části spodního řádku
+desek
