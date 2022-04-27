@@ -1,9 +1,9 @@
-Připraveno pro TeXLive (XeLaTeX/LuaLaTeX, Biber). Předpokládá se alespoň
-základní orientace v&nbsp;syntaxi LaTeXu.
+Připraveno pro [TeXLive](https://www.tug.org/texlive/) (XeLaTeX/LuaLaTeX,
+Biber). Předpokládá se alespoň základní orientace v&nbsp;syntaxi LaTeXu.
 
-<b>Organizace</b>
+**Organizace**
 * `metadata.tex` - prostředí s&nbsp;proměnnými daty
-* `app.tex` - základní dokument
+* `app.tex` - základní dokument s&nbsp;členěním celé práce
 * `text-uvod.tex` - text úvodu práce
 * `text-prace.tex` - vlastní text práce
 * `text-zaver.tex` - text závěru práce
@@ -15,6 +15,7 @@ dokumentu
 * `struktura/shrnuti-cizi.tex` - text anotace v&nbsp;cizím jazyce
 * `struktura/slovnik.tex` - slovník pro úpravu zalamování slov
 
-<b>Makefile</b><br>
+**Makefile**<br>
 Překlad do PDF lze zajistit jednoduchým zavoláním `make`, konečný výsledek bude
-uložen jako `app.pdf`.
+uložen jako `app.pdf` s&nbsp;odpovídajícími metadaty, vznikne také návrh
+desek `app-desky.pdf`.
