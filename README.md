@@ -13,3 +13,6 @@ při&nbsp;vlastním zlatotisku; obyčejně stačí obsluze tiskárny pouze sděl
 obsah horního řádku, prostředního řádku a&nbsp;jména autora v&nbsp;levé
 části a&nbsp;místa a&nbsp;roku odevzdání práce v&nbsp;pravé části spodního řádku
 desek
+* při použití pevných desek je nutné, aby byl na začátku a&nbsp;na konci práce,
+tedy mezi deskami a&nbsp;titulním listem a&nbsp;mezi poslední potištěnou
+stránkou a&nbsp;zadními deskami jeden prázdný list papíru
