@@ -18,4 +18,6 @@ dokumentu
 **Makefile**<br>
 Překlad do PDF lze zajistit jednoduchým zavoláním `make`, konečný výsledek bude
 uložen jako `app.pdf` s&nbsp;odpovídajícími metadaty, vznikne také návrh
-desek `app-desky.pdf`.
+desek `app-desky.pdf`. Archivace (výsledné) práce je možné provést zavoláním
+`make archive`, čímž vznikne archiv `app.tar.gz` obsahující čistý TeXový kód
+a&nbsp;výsledné PDF.

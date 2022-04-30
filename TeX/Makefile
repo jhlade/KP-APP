@@ -24,3 +24,6 @@ softclean:
 
 clean: softclean
 	rm -f *.pdf
+
+archive: compile softclean
+	tar -cf ${TARGET}.tar.gz *.tex *.bib *.pdf Makefile ./struktura ./obrazky
