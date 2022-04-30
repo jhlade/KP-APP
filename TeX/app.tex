@@ -19,6 +19,11 @@
 
 \begin{document}
 
+% pokud je požadována prázdná stránka kvůli deskám
+\ifdefined\isCover
+	\blankpage
+\fi
+
 %-------------------------------------------------------------------------------
 % TITULNÍ LIST
 %-------------------------------------------------------------------------------
@@ -110,5 +115,10 @@
 %-------------------------------------------------------------------------------
 % KONEC DOKUMENTU
 %-------------------------------------------------------------------------------
+
+% pokud je požadována prázdná stránka kvůli deskám
+\ifdefined\isCover
+	\blankpage
+\fi
 
 \end{document}

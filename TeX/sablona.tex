@@ -100,7 +100,7 @@
 % barvy
 \usepackage{xcolor}
 
-% změna záhlaví 
+% změna záhlaví
 \usepackage{chngcntr}
 
 % hypertextové odkazy bez rámečků
@@ -154,7 +154,7 @@
   bottom=25mm,
   left=40mm,
   right=25mm,
-  heightrounded, 
+  heightrounded,
 ]{geometry}
 
 % ------------------------------------------------------------------------------
@@ -178,13 +178,13 @@
   \clearpage
   {\protect\pagestyle{StyleAppendix}}
   \write\@auxout{%
-    \string\let\string\latex@tf@toc\string\tf@toc% 
-    \string\let\string\tf@toc\string\tf@apc% 
+    \string\let\string\latex@tf@toc\string\tf@toc%
+    \string\let\string\tf@toc\string\tf@apc%
   }%
 }
 \AtEndEnvironment{appendices}{%
   \write\@auxout{%
-    \string\let\string\tf@toc\string\latex@tf@toc% 
+    \string\let\string\tf@toc\string\latex@tf@toc%
   }%
 }
 \makeatother
@@ -306,13 +306,13 @@
 	\else_{#3}\fi$\else\if###2$\sharp\if#3\relax\else_{#3}\fi$\else$_{#2}$\fi\fi\fi}
 
 % volná, nečíslovaná stránka
-\newcommand\blankpage{%
-    \null
+\newcommand{\blankpage}{%
     \clearpage
-    \thispagestyle{empty}%
-    %\addtocounter{page}{-1}%
+    \thispagestyle{empty}
+    \null
     \newpage
-    \clearpage}
+    \clearpage
+}
 
 \newlength\longest
 
