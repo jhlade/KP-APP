@@ -5,8 +5,8 @@
 % formát A4, jednostranně, základní velikost písma 12 bodů
 \documentclass[12pt,a4paper,oneside]{report}
 
-% základní proklad 1.2
-\renewcommand{\baselinestretch}{1.2}
+% základní proklad 1.5
+\renewcommand{\baselinestretch}{1.5}
 
 % jazyk
 \usepackage[main=czech]{babel} % čeština
@@ -100,7 +100,7 @@
 % barvy
 \usepackage{xcolor}
 
-% změna záhlaví 
+% změna záhlaví
 \usepackage{chngcntr}
 
 % hypertextové odkazy bez rámečků
@@ -154,7 +154,7 @@
   bottom=25mm,
   left=40mm,
   right=25mm,
-  heightrounded, 
+  heightrounded,
 ]{geometry}
 
 % ------------------------------------------------------------------------------
@@ -178,13 +178,13 @@
   \clearpage
   {\protect\pagestyle{StyleAppendix}}
   \write\@auxout{%
-    \string\let\string\latex@tf@toc\string\tf@toc% 
-    \string\let\string\tf@toc\string\tf@apc% 
+    \string\let\string\latex@tf@toc\string\tf@toc%
+    \string\let\string\tf@toc\string\tf@apc%
   }%
 }
 \AtEndEnvironment{appendices}{%
   \write\@auxout{%
-    \string\let\string\tf@toc\string\latex@tf@toc% 
+    \string\let\string\tf@toc\string\latex@tf@toc%
   }%
 }
 \makeatother
@@ -293,6 +293,9 @@
 % JINÉ VLASTNÍ PŘÍKAZY
 % ------------------------------------------------------------------------------
 
+% jednoduché uvozovky
+\newcommand\juv[1]{\quotesinglbase{#1}\textquoteleft}
+
 % tečkovaná vodící čára pro podpisy
 \newcommand{\dotrule}[1]{%
    \parbox[t]{#1}{\dotfill}}
@@ -306,13 +309,13 @@
 	\else_{#3}\fi$\else\if###2$\sharp\if#3\relax\else_{#3}\fi$\else$_{#2}$\fi\fi\fi}
 
 % volná, nečíslovaná stránka
-\newcommand\blankpage{%
-    \null
+\newcommand{\blankpage}{%
     \clearpage
-    \thispagestyle{empty}%
-    %\addtocounter{page}{-1}%
+    \thispagestyle{empty}
+    \null
     \newpage
-    \clearpage}
+    \clearpage
+}
 
 \newlength\longest
 

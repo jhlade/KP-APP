@@ -14,34 +14,42 @@
 % studijní obor a program
 \newcommand{\studijniObor}{Hudba/Zpěv}
 % pro obor zpěv ponechte program prázdný (~)
-\newcommand{\studijniProgram}{Hra na nástroj}
+\newcommand{\studijniProgram}{Hra na~nástroj}
 
 % téma absolventské písemné práce
 \newcommand{\appTema}{Název\\ absolventské práce}
 
 % vedoucí práce a vyučující hlavního oboru
 \newcommand{\appVedouci}{Mgr.~Jiří Vedoucí}
-\newcommand{\appUcitel}{MgA.~Pavel Hráč}
+\newcommand{\appUcitel}{Mgr.\,MgA.~Pavel Hráč}
 
 % škola a místo
 \newcommand{\skola}{Konzervatoř Pardubice}
 \newcommand{\misto}{Pardubice}
 
 % rok odevzdání/obhajoby APP
+% - pro aktuální kalendářní rok: \the\year{}
 \newcommand{\skolniRok}{\the\year{}}
 
-% datum odevzdání - pro datum překladu do PDF \today
+% datum odevzdání
+% - pro datum překladu do PDF: \today
+% - při vlastním datu zapište ve formátu "27. dubna 2022"
 \newcommand{\datumOdevzdani}{\today}
 
-% "Shrnutí" v cizím jazyce
+% slovíčko "Shrnutí" v cizím jazyce
 \newcommand{\shrnutiCizi}{Summary} % Angličtina
 %\newcommand{\shrnutiCizi}{Zusammenfassung} % Němčina
 
-% "Klíčová slova" v cizím jazyce
+% slovíčko "Klíčová slova" v cizím jazyce
 \newcommand{\klicovaSlovaCiziLit}{Keywords} % Angličtina
 %\newcommand{\klicovaSlovaCiziLit}{Schlüsselwörter} % Němčina
 
+% čárkami oddělený seznam klíčových slov
 % klíčová slova CZ
 \newcommand{\klicovaslova}{slovo1, slovo2, slovo3, slovo4, slovo5}
 % klíčová slova v cizím jazyce
 \newcommand{\klicovaslovaCizi}{word1, word2, word3, word4, word5}
+
+% pokud jsou použity pevné desky, vložit prázdnou stránku
+% před titulní stranu a prázdnou stránku na konec dokumentu
+\def\isCover{1}

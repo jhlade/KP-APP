@@ -1,6 +1,6 @@
 %-------------------------------------------------------------------------------
 % ABSOLVENTSKÁ PÍSEMNÁ PRÁCE
-% TeX, verze 03-2022
+% TeX, verze 04-2022
 %-------------------------------------------------------------------------------
 
 %-------------------------------------------------------------------------------
@@ -18,6 +18,11 @@
 %-------------------------------------------------------------------------------
 
 \begin{document}
+
+% pokud je požadována prázdná stránka kvůli deskám
+\ifdefined\isCover
+	\blankpage
+\fi
 
 %-------------------------------------------------------------------------------
 % TITULNÍ LIST
@@ -43,6 +48,8 @@
 
 \setcounter{tocdepth}{3}
 
+\begin{spacing}{1.2}
+
 % obsah
 \addtocontents{toc}{\protect\thispagestyle{empty}}
 \tableofcontents
@@ -51,6 +58,8 @@
 \newpage
 \addtocontents{apc}{\protect\thispagestyle{empty}}
 \listofappendix
+
+\end{spacing}
 
 %-------------------------------------------------------------------------------
 % VLASTNÍ TEXT PRÁCE
@@ -110,5 +119,10 @@
 %-------------------------------------------------------------------------------
 % KONEC DOKUMENTU
 %-------------------------------------------------------------------------------
+
+% pokud je požadována prázdná stránka kvůli deskám
+\ifdefined\isCover
+	\blankpage
+\fi
 
 \end{document}
