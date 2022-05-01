@@ -1,15 +1,9 @@
 \nadpis{Šablona a~formální požadavky APP}
 Kompletní požadavky k~absolventským písemným pracím shrnuje směrnice
 Konzervatoře Pardubice č.~5/19, jejíž plné znění je k~dispozici na webových
-stránkách školy v~nabídce \textit{Studium – Absolutorium}.
- 
-Šablona si klade za cíl zjednodušit formální stránku práce, aby měli autoři
-více času na samotný obsah.
-
-
-Nadpisy první úrovně automaticky začínají na nové straně.
-Použití citace.~\cite{harry}
-
+stránkách školy v~nabídce \textit{Studium – Absolutorium}. Šablona si klade
+za~cíl zjednodušit formální stránku práce, aby měli autoři více času na samotný
+obsah.
 
 \podnadpis{Doporučená minimální struktura práce}
 Základní struktura absolventské práce udává zejména závazné pořadí nečíslovaných
@@ -19,6 +13,14 @@ o~samostatnosti}, \textit{Obsah}, \textit{Úvod}, vlastní text práce,
 \textit{Závěr}, \textit{Shrnutí}, \textit{Shrnutí v~cizím jazyce},
 \textit{Seznam literatury} a~přílohy.\footnote{Všechny zmíněné části jsou
 v~předkládaných šablonách již předpřipraveny}
+
+\begin{figure}[!ht]
+	\begin{center}
+		\includegraphics[width=\textwidth]{./obrazky/diagram-app.pdf}
+    \end{center}
+
+	\caption{Struktura práce}
+\end{figure}
 
 \podnadpis{Rozsah práce}
 Minimálním rozsahem práce se rozumí nejnižší možný počet stran vlastního textu,
@@ -32,6 +34,7 @@ Do rozsahu vlastního textu se dále také počítají textové přílohy, ale p
 jsou-li autorským dílem (např.~provedené rozhovory). V~této ukázce je jako
 příklad první přílohy přepis korespondence, který autorským dílem \textit{není}.
 
+\noindent
 Pro APP je minimální hranicí 20 stran textu, samozřejmě je lépe, je-li stran
 napsáno více, optimum bude cca na 22-25 tiskových stranách. Horní hranici je
 nutné konzultovat s~vedoucím práce, rozsah by však neměl být zbytečně objemný.
@@ -52,15 +55,19 @@ jednoduchým zavoláním \texttt{make}.
 \nadpis{Nadpis první úrovně}
 Číslovaný nadpis první úrovně lze realizovat příkazem
 \texttt{{\textbackslash}nadpis\{Text nadpisu\}}. První úroveň nadpisu otevírá
-každou hlavní kapitolu práce se~samostatným tematickým celkem a~vždy začíná
-na~nové stránce. Nadpis hlavní kapitoly nikdy nemůže okamžitě navazovat na~dílčí
-podnadpisy, musí za~ním stát krátký odstavec stručně charakterizující další
-obsah.
+každou hlavní \emph{kapitolu} práce se~samostatným tematickým celkem a~vždy
+začíná na~nové stránce. Nadpis hlavní kapitoly nikdy nemůže okamžitě navazovat
+na~dílčí podnadpisy, musí za~ním stát krátký odstavec stručně charakterizující
+další obsah.
 
 \podnadpis{Nadpis druhé úrovně}
 Číslovaný nadpis druhé úrovně je k~dispozici pod~příkazem
 \texttt{{\textbackslash}podnadpis\{Text podnadpisu\}}. Druhá úroveň člení každou
 kapitolu na~její stěžejní body a~obvykle se zde nachází nejvíce odstavců textu.
+
+První řádek každého následujícího odstavce je automaticky odsazen. Je třeba
+dávat pozor na~místa, kde je automatické odsazení nežádoucí -- pokud
+by odstavec začínal na~nové straně a~po~vloženém obrázku nebo tabulce.
 
 \podpodnadpis{Nadpis třetí úrovně}
 Nadpis třetí úrovně je uveden příkazem
@@ -70,10 +77,33 @@ věnovat pro~popisy konkrétních případů, které obecně zahrnuje nadpis dru
 úrovně (př.~\textit{1 - Hudba}, \textit{2 - Hudební nástroje}, \textit{3 -
 Smyčcové nástroje}).
 
-\podnadpis{Jiné objekty}
-Harry Potter nikdy nevydal tón \nota{Eb2}, natož \nota{C#6}, přestože o~tom
-v~knížce~\cite{harry} není ani slovo. Následující obrázek
-zachycuje logo školy.
+\podnadpis{Bibliografické citace}
+
+Šablona předpokládá používání zdrojů zapsaných ve~stylu \hologo{BibTeX}
+v~externím souboru \texttt{literatura.bib}, který je při automatické kompilaci
+překládán nástrojem \texttt{biber}. V~ukázce jsou pro~příklad uvedeny časté typy
+zdrojů (kniha, akademická práce, elektronický článek, elektronický zdroj) tak,
+aby odpovídaly normě ČSN~ISO~690 (01~0197) podle znění platného od~1.~dubna
+2011. Preferovanou citační metodou je \emph{vacouverský stylem číselných odkazů}
+v~hranatých závorkách:~\cite[19]{hladena19}.
+
+\nocite{*}
+
+\podnadpis{Jiné funkce a~objekty}
+Lze psát technické tóny \nota{Eb2} (\texttt{{\textbackslash}nota\{Eb2\}}),
+nebo \nota{C#6} (\texttt{{\textbackslash}nota\{C\#6\}}). Dále je také
+pro matematické výsledky k~dispozici \doubleunderline{dvojité podržení}
+(\texttt{{\textbackslash}doubleunderline\{\}}) a~vedle obyčejných českých
+uvozovek (\texttt{{\textbackslash}uv\{\}}) také \juv{jednoduché uvozovky}
+(\texttt{{\textbackslash}juv\{\}}), které jsou vhodné pro~zahrnutí přímé řeči
+v~přímé řeči.
+
+Vkládání obrázků není nijak omezeno, řídí se pouze obecnými pravidly --
+k~použití jsou vhodné zejména vektorové formáty (PDF), obrázek by neměl být
+větší než třetina výšky tiskové strany (v~tom případě patří do~příloh,
+viz~ukázka v~příloze~\ref{priloha:partitura}), každý obrázek by měl mít svůj
+popisek a~musí být v~předcházejícím odstavci alespoň stručně uveden: Následující
+obrázek zachycuje logo školy.
 
 \begin{figure}[!ht]
 	\begin{center}
@@ -84,23 +114,6 @@ zachycuje logo školy.
 \end{figure}
 
 \noindent
-Po~obrázku, nebo na nové straně, je třeba manuálně zrušit automatické odsazování
-prvního řádku. \lipsum[5-7][12-22]
-
-\podnadpis{Podnadpis 2.3}
-\lipsum[5-7][12-22]
-
-\podpodnadpis{Podpodnadpis 2.3.1}
-\lipsum[5-7][12-22]
-
-\lipsum[5-7][12-22]
-
-\podpodnadpis{Podpodnadpis 2.3.2}
-\lipsum[5-7][12-22]
-
-\lipsum[5-7][12-22]
-
-\podpodnadpis{Podpodnadpis 2.3.3}
-\lipsum[5-7][12-22]
-
-\lipsum[5-7][12-22]
+Odstavec ihned za~obrázkem není na~svém prvním řádku odsazen
+(\texttt{{\textbackslash}noindent}) a~může zahrnovat podrobnější rozbor jeho
+obsahu.

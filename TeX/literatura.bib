@@ -1,7 +1,10 @@
-% literatura a další zdroje
+% Literatura a další zdroje
 
-% příklad
+% - - - příklady:
+
+% Kniha - monografie
 @book{harry,
+%	key = {vlastní pořadi řazení},
 	hyphenation = {czech},
 	author = {J.K. ROWLING},
 	title = {Harry Potter a vězeň z Azkabanu},
@@ -11,6 +14,75 @@
 	organization = {Klub mladých čtenářů (Albatros)},
 	edition = {1},
 	address = {Praha},
-	pages = {383},
-	ISBN = {80-00-00951-X},
+	pagetotal = {383},
+	isbn = {80-00-00951-X},
+}
+
+% Kniha - kolektiv autorů
+@book{prochazka88,
+	hyphenation = {czech},
+	author = {Vladimír PROCHÁZKA and others},
+	title = {Národní divadlo a~jeho předchůdci},
+	subtitle = {Slovník umělců divadel Vlasteneckého, Stavovského, Prozatimního a~Národního},
+	year = {1988},
+	edition = {1},
+	address = {Praha},
+	isbn = {21-001-88},
+	publisher = {Academia},
+	pagetotal = {624},
+}
+
+% Nevydaná kniha
+@book{kulik18,
+	hyphenation = {czech},
+	author = {Vladimír KULÍK},
+	title = {Konzervatoř Pardubice (1978–2018): Pohled do historie i~současnosti školy při~příležitosti jejího čtyřicetiletí},
+	publisher = {Konzervatoř Pardubice},
+	year = {2018},
+	address = {Pardubice},
+}
+
+% Akademická práce
+@thesis{hladena19,
+	key = {thesis Hladěna},
+	hyphenation = {czech},
+	author = {Jan HLADĚNA},
+	title = {Technické aspekty tvorby absolventské práce},
+	type = {Závěrečná práce},
+	address = {Hradec Králové},
+	year = {2019},
+	institution = {Univerzita Hradec Králové, Pedagogická fakulta},
+	supervisor = {doc.{\,}PaedDr.~Martina {MANĚNOVÁ,~P\lowercase{h}.D.}},
+}
+
+% Článek v online časopise: Hudební rozhledy
+@online{rozhledy21,
+	key = {web Hudební rozhledy},
+	hyphenation = {czech},
+	author = {Radmila HRDINOVÁ},
+	journal = {Hudební rozhledy},
+	title = {\emph{Zlatá éra české opery III: XII.~Aby se nezapomnělo -- Václav Zítek. {In:}} Hudební rozhledy},
+	month = {08},
+	year = {2008},
+	url = {http://hudebnirozhledy.scena.cz/www/index.php?page=clanek&cislo_id=87&id_clanku=814},
+	urldate = {2022-05-01},
+	publisher = {Společnost Hudební rozhledy},
+	howpublished = {online},
+	address = {Praha},
+	issn = {0018-6996},
+}
+
+% Článek na webu: Pardubický kraj
+@online{pardubickykraj,
+	key = {web Pardubický kraj},
+	hyphenation = {czech},
+	author = {},
+	journal = {Pardubický kraj},
+	title = {\emph{Pardubický kraj zná své nejlepší učitele za rok 2021. {In:}} Pardubický kraj: Aktuality},
+	date = {2022-04-14},
+	url = {https://www.pardubickykraj.cz/aktuality/116115/pardubicky-kraj-zna-sve-nejlepsi-ucitele-za-rok-2021},
+	urldate = {2022-05-01},
+	publisher = {Pardubický kraj},
+	howpublished = {online},
+	address = {Pardubice},
 }
