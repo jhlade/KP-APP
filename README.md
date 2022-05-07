@@ -6,6 +6,19 @@ a&nbsp;to pro různé editory a&nbsp;systémy (aktuálně pouze MS Word a TeX).
 **Současná doporučená struktura práce**
 ![Doporučená struktura APP](https://github.com/jhlade/KP-APP/blob/assets/struktura/diagram-app.png?raw=true)
 
+1. Titulní list
+2. Prohlášení o&nbsp;samostatnosti a&nbsp;prostor pro vlastnoruční podpis
+3. (poděkování - nepovinné)
+4. Obsah a&nbsp;seznam příloh
+5. Úvod
+6. vlastní text práce členěný do&nbsp;kapitol
+7. Závěr
+6. Shrnutí a&nbsp;klíčová slova (plní funkci anotace práce)
+7. Shrnutí a&nbsp;klíčová slova ve&nbsp;zvoleném cizím jazyce
+8. Literatura a&nbsp;zdroje - bibliografie
+7. Přílohy
+
+**Jiné poznámky**
 * při použití pevných desek je nutné, aby byl na začátku a&nbsp;na konci práce
 (tedy mezi deskami a&nbsp;titulním listem a&nbsp;mezi poslední potištěnou
 stránkou a&nbsp;zadními deskami) jeden prázdný list papíru
