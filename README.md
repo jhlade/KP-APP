@@ -18,7 +18,7 @@ práce v&nbsp;pravé části spodního řádku desek
 * začíná sběr připomínek pro&nbsp;rok 2022/2023
 
 **Shrnutí změn 2022**
-* první ucelená šablona pro TeX
+* první ucelená šablona pro [TeX](https://github.com/jhlade/KP-APP/tree/master/TeX)
 * přidána minišablona vzoru desek pevné vazby - vhodné pro&nbsp;použití
 při&nbsp;vlastním zlatotisku
 
