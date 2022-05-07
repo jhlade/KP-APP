@@ -5,6 +5,12 @@ a&nbsp;to pro různé editory a&nbsp;systémy. Dílčí nepublikované změny js
 k&nbsp;nalezení v&nbsp;odpovídajících
 [větvích](https://github.com/jhlade/KP-APP/branches).
 
+![Doporučená truktura APP](https://github.com/jhlade/KP-APP/blob/assets/struktura/diagram-app.png?raw=true)
+
+**Květen 2022**
+* všechny práce byly úspěšně odevzdány
+* začíná sběr připomínek pro&nbsp;rok 2022/2023
+
 **Hlavní změny - březen 2022**
 * aktualizovaná šablona pro Microsoft Word
 * první ucelená šablona pro TeX
