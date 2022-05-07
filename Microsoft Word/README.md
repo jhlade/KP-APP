@@ -1,13 +1,16 @@
-**Verze pro Microsoft Word**<br />
-Rok odevzdání přednastaven na 2022.
+**Verze pro Microsoft Word**
 
-Tato šablona byla po úpravách úspěšně použita i pro
+Rok odevzdání přednastaven na 2023. [Přímo ke stažení zde jako
+`kp-app.dotx`](./kp-app.dotx).
+
+**Tato šablona byla po menších úpravách úspěšně použita i&nbsp;pro**
 * FF UK
 * HAMU
 * PdF UHK
 
-Dodatečná šablona pro pevné desky (`kp-app-desky.dotx`) je pouze orientační.
-Při&nbsp;požadavku na&nbsp;vlastní zlatotisk odevzdejte jako plně vektorové PDF.
+Dodatečná šablona pro pevné desky ([`kp-app-desky.dotx`](./kp-app-desky)) je
+pouze orientační. Při&nbsp;požadavku na&nbsp;vlastní zlatotisk (třeba
+s&nbsp;logem školy) odevzdejte jako plně vektorové PDF.
 
 **přehled hlavních definovaných stylů**
 
