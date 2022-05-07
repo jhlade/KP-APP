@@ -1,5 +1,7 @@
 Připraveno pro [TeXLive](https://www.tug.org/texlive/) (XeLaTeX/LuaLaTeX,
 Biber). Předpokládá se alespoň základní orientace v&nbsp;syntaxi LaTeXu.
+Zjednodušené stažení v&nbsp;jednom
+archivu: [`app.tar.gz`](./app.tar.gz?raw=true).
 
 **Organizace**
 * `metadata.tex` - prostředí s&nbsp;proměnnými daty
