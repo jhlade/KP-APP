@@ -5,6 +5,7 @@ a&nbsp;to pro různé editory a&nbsp;systémy. Dílčí nepublikované změny js
 k&nbsp;nalezení v&nbsp;odpovídajících
 [větvích](https://github.com/jhlade/KP-APP/branches).
 
+**Současná doporučená struktura práce**
 ![Doporučená truktura APP](https://github.com/jhlade/KP-APP/blob/assets/struktura/diagram-app.png?raw=true)
 
 **Květen 2022**
