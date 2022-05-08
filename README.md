@@ -6,9 +6,9 @@ a&nbsp;to pro různé editory a&nbsp;systémy (aktuálně pouze
 a&nbsp;[TeX](https://github.com/jhlade/KP-APP/tree/master/TeX), výhledově
 jsou v&nbsp;plánu LibreOffice a&nbsp;Apple Pages).
 
-**:paperclip: Rychlé stažení**
-* [MS Word - `kp-app.dotx`](./Microsoft%20Word/kp-app.dotx?raw=true)
-* [TeX - `app.tar.gz`](./TeX/app.tar.gz?raw=true)
+**:paperclip: Rychlé stažení nejnovější verze**
+* [MS Word -- `kp-app.dotx`](./Microsoft%20Word/kp-app.dotx?raw=true)
+* [TeX -- `app.tar.gz`](./TeX/app.tar.gz?raw=true)
 
 **:orange_book: Současná doporučená struktura práce**
 ![Doporučená struktura APP](https://github.com/jhlade/KP-APP/blob/assets/struktura/diagram-app.png?raw=true)
