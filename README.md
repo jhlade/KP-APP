@@ -15,23 +15,24 @@ jsou v&nbsp;plánu LibreOffice a&nbsp;Apple Pages).
 
 1. Titulní list
 2. Prohlášení o&nbsp;samostatnosti a&nbsp;prostor pro vlastnoruční podpis
-3. (poděkování - nepovinné)
+3. (poděkování &ndash; nepovinné)
 4. Obsah a&nbsp;seznam příloh
 5. Úvod
 6. vlastní text práce členěný do&nbsp;kapitol
 7. Závěr
 6. Shrnutí a&nbsp;klíčová slova (plní funkci anotace práce)
 7. Shrnutí a&nbsp;klíčová slova ve&nbsp;zvoleném cizím jazyce
-8. Literatura a&nbsp;zdroje - bibliografie
+8. Literatura a&nbsp;zdroje &ndash; bibliografie
 7. Přílohy
 
 **:memo: Jiné poznámky**
 * při použití pevných desek je nutné, aby byl na začátku a&nbsp;na konci práce
 (tedy mezi deskami a&nbsp;titulním listem a&nbsp;mezi poslední potištěnou
 stránkou a&nbsp;zadními deskami) jeden prázdný list papíru
-* vzor desek - obyčejně stačí obsluze tiskárny pouze sdělit obsah horního řádku,
-prostředního řádku a&nbsp;jména autora v&nbsp;levé části a&nbsp;roku odevzdání
-práce v&nbsp;pravé části spodního řádku desek
+* vzor desek je zde pouze pro&nbsp;doplnění &ndash; obyčejně stačí obsluze
+tiskárny pouze sdělit obsah horního řádku, prostředního řádku, jména autora
+v&nbsp;levé části a&nbsp;roku odevzdání práce v&nbsp;pravé části spodního řádku
+požadovaných desek
 
 **Květen 2022**
 * všechny práce byly úspěšně odevzdány
@@ -39,7 +40,7 @@ práce v&nbsp;pravé části spodního řádku desek
 
 **Shrnutí změn 2022**
 * první ucelená šablona pro [TeX](https://github.com/jhlade/KP-APP/tree/master/TeX)
-* přidána minišablona vzoru desek pevné vazby - vhodné pro&nbsp;použití
+* přidána minišablona vzoru desek pevné vazby &ndash; vhodné pro&nbsp;použití
 při&nbsp;vlastním zlatotisku
 
 :lollipop: Dílčí dosud nepublikované změny jsou k&nbsp;nalezení
