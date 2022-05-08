@@ -3,7 +3,12 @@ v&nbsp;prostředí pardubické konzervatoře v&nbsp;souladu s&nbsp;vnitřní sm�
 [č.&nbsp;5/19](http://www.konzervatorpardubice.eu/studium/absolutorium/smernice-5-19-absolventske-pisemne-prace),
 a&nbsp;to pro různé editory a&nbsp;systémy (aktuálně pouze
 [MS Word](https://github.com/jhlade/KP-APP/tree/master/Microsoft%20Word)
-a&nbsp;[TeX](https://github.com/jhlade/KP-APP/tree/master/TeX)).
+a&nbsp;[TeX](https://github.com/jhlade/KP-APP/tree/master/TeX), výhledově
+jsou v&nbsp;plánu LibreOffice a&nbsp;Apple Pages).
+
+**Rychlé stažení**
+* [MS Word - `kp-app.dotx`](./Microsoft%20Word/kp-app.dotx?raw=true)
+* [TeX - `app.tar.gz`](./TeX/app.tar.gz?raw=true)
 
 **Současná doporučená struktura práce**
 ![Doporučená struktura APP](https://github.com/jhlade/KP-APP/blob/assets/struktura/diagram-app.png?raw=true)
