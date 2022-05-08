@@ -6,11 +6,11 @@ a&nbsp;to pro různé editory a&nbsp;systémy (aktuálně pouze
 a&nbsp;[TeX](https://github.com/jhlade/KP-APP/tree/master/TeX), výhledově
 jsou v&nbsp;plánu LibreOffice a&nbsp;Apple Pages).
 
-**Rychlé stažení**
+**:paperclip: Rychlé stažení**
 * [MS Word - `kp-app.dotx`](./Microsoft%20Word/kp-app.dotx?raw=true)
 * [TeX - `app.tar.gz`](./TeX/app.tar.gz?raw=true)
 
-**Současná doporučená struktura práce**
+**:orange_book: Současná doporučená struktura práce**
 ![Doporučená struktura APP](https://github.com/jhlade/KP-APP/blob/assets/struktura/diagram-app.png?raw=true)
 
 1. Titulní list
@@ -25,7 +25,7 @@ jsou v&nbsp;plánu LibreOffice a&nbsp;Apple Pages).
 8. Literatura a&nbsp;zdroje - bibliografie
 7. Přílohy
 
-**Jiné poznámky**
+**:memo: Jiné poznámky**
 * při použití pevných desek je nutné, aby byl na začátku a&nbsp;na konci práce
 (tedy mezi deskami a&nbsp;titulním listem a&nbsp;mezi poslední potištěnou
 stránkou a&nbsp;zadními deskami) jeden prázdný list papíru
@@ -42,5 +42,6 @@ práce v&nbsp;pravé části spodního řádku desek
 * přidána minišablona vzoru desek pevné vazby - vhodné pro&nbsp;použití
 při&nbsp;vlastním zlatotisku
 
-Dílčí nepublikované změny jsou k&nbsp;nalezení v&nbsp;odpovídajících
-[větvích](https://github.com/jhlade/KP-APP/branches).
+:lollipop: Dílčí dosud nepublikované změny jsou k&nbsp;nalezení
+v&nbsp;odpovídajících
+[vývojových větvích](https://github.com/jhlade/KP-APP/branches).
