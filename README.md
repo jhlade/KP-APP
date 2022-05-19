@@ -9,6 +9,7 @@ jsou v&nbsp;plánu LibreOffice a&nbsp;Apple Pages).
 **:paperclip: Rychlé stažení nejnovější verze**
 * [MS Word &mdash; `kp-app.dotx`](./Microsoft%20Word/kp-app.dotx?raw=true) (nepoužívat pro LibreOffice!)
 * [TeX &mdash; `app.tar.gz`](./TeX/app.tar.gz?raw=true)
+* [Google Dokumenty](https://docs.google.com/document/d/1oDXDRmXK_mN3aCsDoc5Fa4H7s_K45u-Lzg_K3_hfP7M/edit?usp=sharing) (online v&nbsp;prohlížeči; pouze po přihlášení na školní účet)
 
 **:orange_book: Současná doporučená struktura práce**
 ![Doporučená struktura APP](https://github.com/jhlade/KP-APP/blob/assets/struktura/diagram-app.png?raw=true)
