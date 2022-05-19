@@ -7,7 +7,7 @@ a&nbsp;[TeX](https://github.com/jhlade/KP-APP/tree/master/TeX), výhledově
 jsou v&nbsp;plánu LibreOffice a&nbsp;Apple Pages).
 
 **:paperclip: Rychlé stažení nejnovější verze**
-* [MS Word &mdash; `kp-app.dotx`](./Microsoft%20Word/kp-app.dotx?raw=true)
+* [MS Word &mdash; `kp-app.dotx`](./Microsoft%20Word/kp-app.dotx?raw=true) (nepoužívat pro LibreOffice!)
 * [TeX &mdash; `app.tar.gz`](./TeX/app.tar.gz?raw=true)
 
 **:orange_book: Současná doporučená struktura práce**
@@ -35,8 +35,10 @@ v&nbsp;levé části a&nbsp;roku odevzdání práce v&nbsp;pravé části spodn�
 požadovaných desek
 
 **Květen 2022**
-* všechny práce byly úspěšně odevzdány
-* začíná sběr připomínek pro&nbsp;rok 2022/2023
+* :white_check_mark: všechny práce byly úspěšně odevzdány
+* :information_desk_person: začíná sběr připomínek pro&nbsp;rok 2022/2023
+* :bar_chart: podle prvních vyhodnocení byly šablony využity v&nbsp;70&nbsp;% případů
+* :bar_chart: platformy 80&nbsp;% MS Word, 9&nbsp;% LibreOffice, 6&nbsp;% LaTeX, 6&nbsp;% Google Docs
 
 **Shrnutí změn 2022**
 * první ucelená šablona pro [TeX](https://github.com/jhlade/KP-APP/tree/master/TeX)
