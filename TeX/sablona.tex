@@ -25,7 +25,7 @@
   ,natbib=true
   ,maxnames=3
   ,minnames=3
-  ,pagetotal=false
+  ,pagetotal=false % celkový počet stránek nelze tímto způsobem zapsat
   ,autolang=other
   ,bibencoding=UTF8
   ,url=false
@@ -55,80 +55,90 @@
       \renewcommand*{\makelabel}[1]{\hss##1}}
   {\endlist}
   {\item}
-
+  
 % ------------------------------------------------------------------------------
-% POUŽITELNÉ BALÍČKY
+% POVINNÉ BALÍČKY
 % ------------------------------------------------------------------------------
-
-% výplňový text a loga
-\usepackage{lipsum}
-\usepackage{hologo}
 
 % přílohy
 \usepackage{appendix}
 
-% tabulky
-\usepackage{tabularx}
-%\usepackage{makecell}
-
 % poznámky pod čarou
 \usepackage{footnote}
 
-% obrázky v textu
-\usepackage{wrapfig}
-\usepackage{subcaption}
+% tabulky
+\usepackage{tabularx}
 
-% matematické prostředí
-\usepackage{amsmath}
-\usepackage{mathtools}
+% XeTeX unicode
+\usepackage{xunicode}
 
-% stojatá řecká písmena
-\usepackage{upgreek}
-
-% rámečky
-\usepackage{framed}
+% sazba pro XeLaTeX
+\usepackage{xltxtra}
 
 % hypertext
-\usepackage{xunicode,xltxtra,url,parskip}
-
-% předsazení odstavce
-\setlength{\parindent}{1.2cm}
-\setlength{\parskip}{12pt}
-
-% zájlaví a zápatí
-\usepackage{fancyhdr}
+\usepackage{url}
 
 % barvy
 \usepackage{xcolor}
 
-% změna záhlaví
-\usepackage{chngcntr}
-
-% hypertextové odkazy bez rámečků
+% černé hypertextové odkazy bez rámečků (obsah, literatura, ...)
 \usepackage[hidelinks]{hyperref}
 \hypersetup{
 	colorlinks=false,
 	pdfborder={0 0 0},
 }
 
-% kreslení v TikZ - grafy, diagramy, obvody
-\usepackage{tikz,pgfplots}
-\pgfplotsset{compat=1.18}
-\usepackage[simplified]{pgf-umlcd}
-\usepgfplotslibrary{polar}
-\tikzset{fontscale/.style = {font=\relscale{#1}}}
-\usepackage[siunitx,european]{circuitikz} % evropské značky, jednotky SI
-\usetikzlibrary{intersections}
+% ------------------------------------------------------------------------------
+% PRO UKÁZKU A VÝVOJ
+% ------------------------------------------------------------------------------
 
-% úprava nadpisů a řádkování
-\usepackage{titlesec}
-\usepackage{setspace}
+% výplňový text a loga - pro ukázku
+\usepackage{lipsum}
+\usepackage{hologo}
+
+% ------------------------------------------------------------------------------
+% POUŽITELNÉ BALÍČKY
+% ------------------------------------------------------------------------------
+
+% obrázky v textu a vícefigurové obrázky
+%\usepackage{wrapfig}
+%\usepackage{subcaption}
+
+% matematické prostředí
+%\usepackage{amsmath}
+%\usepackage{mathtools}
+
+% stojatá řecká písmena
+%\usepackage{upgreek}
+
+% rámečky
+%\usepackage{framed}
+
+% kreslení v TikZ - grafy, diagramy, obvody
+%\usepackage{tikz} % základ
+%\usepackage{pgfplots} % grafy
+%\pgfplotsset{compat=1.18}
+%\usepackage[simplified]{pgf-umlcd}
+%\usepgfplotslibrary{polar} % polární grafy
+%\tikzset{fontscale/.style = {font=\relscale{#1}}}
+%\usepackage[siunitx,european]{circuitikz} % evropské značky, jednotky SI
+%\usetikzlibrary{intersections}
+
+% vnoření jiných celých PDF stránek
+%\usepackage{pdfpages}
 
 % ovládání software, klávesnice
-\usepackage{menukeys}
+%\usepackage{menukeys}
 
 % vložené strojopisy
-\usepackage{verbatimbox}
+%\usepackage{verbatimbox}
+
+% ------------------------------------------------------------------------------
+% NADPISY A ODSTAVCE
+% ------------------------------------------------------------------------------
+
+\usepackage{titlesec}
+\usepackage{setspace}
 
 \makeatletter
 \newcommand\verbfilelist[2][]{%
@@ -142,8 +152,10 @@
 }
 \makeatother
 
-% vnoření PDF
-\usepackage{pdfpages}
+% předsazení odstavců
+\usepackage{parskip}
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{12pt}
 
 % ------------------------------------------------------------------------------
 % STRÁNKA A4 - OKRAJE
@@ -208,6 +220,9 @@
 % ČÍSLOVÁNÍ FIGUR
 % ------------------------------------------------------------------------------
 
+% změna číslování
+\usepackage{chngcntr}
+
 % číslování obrázků
 \counterwithin{figure}{chapter}
 
@@ -264,6 +279,9 @@
 % ------------------------------------------------------------------------------
 % ZÁHLAVÍ A ZÁPATÍ STRÁNEK
 % ------------------------------------------------------------------------------
+
+% záhlaví a zápatí
+\usepackage{fancyhdr}
 
 % výchozí záhlaví a zápatí stránky
 \lhead{}
