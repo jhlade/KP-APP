@@ -1,10 +1,13 @@
 ### Diagram APP
 
 **WebP**
+
 ![WebP Diagram APP](https://github.com/jhlade/KP-APP/blob/assets/struktura/diagram-app.webp?raw=true)
 
-**SVG**
-![SVG Diagram APP](https://github.com/jhlade/KP-APP/blob/assets/struktura/diagram-app.svg?raw=true)
+**SVG (min)**
 
-**SVGz**
-![SVGz Diagram APP](https://github.com/jhlade/KP-APP/blob/assets/struktura/diagram-app.svgz?raw=true)
+![SVG Diagram APP](https://github.com/jhlade/KP-APP/blob/assets/struktura/diagram-app-min.svg?raw=true)
+
+**SVG (plné)**
+
+![SVG Diagram APP](https://github.com/jhlade/KP-APP/blob/assets/struktura/diagram-app.svg?raw=true)
