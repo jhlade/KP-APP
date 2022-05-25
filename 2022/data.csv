@@ -1,36 +1,36 @@
-﻿id;vs_titul;rok;forma;obor;velikost;počet_pdf;verze_pdf;tiskovych_stran;system;verze;pouzita_sablona;odchylky;chyby_typografie
-1;false;2022;D;violoncello;975405;1;1.7;36;Microsoft Word;2019;true;3;20
-2;false;2022;D;zpěv;1930412;1;1.7;45;Microsoft Word;2019;true;1;11
-3;false;2022;K;housle;10570542;1;1.6;38;LaTeX;TexpadTeX;false;NaN;6
-4;false;2022;D;trombon;692655;1;1.3;29;Microsoft Word;365;true;1;5
-5;false;2022;D;klarinet;1514617;2;1.5;78;Microsoft Word;2010;true;0;22
-6;false;2022;D;klavír;438423;1;1.3;32;Microsoft Word;365;false;NaN;14
-7;false;2022;D;housle;658389;1;1.5;31;Microsoft Word;2010;true;6;63
-8;false;2022;D;zpěv;526477;1;1.7;59;Microsoft Word;365;true;0;1
-9;true;2022;K;klavír;3775171;1;1.5;67;Microsoft Word;2016;true;7;44
-10;false;2022;D;viola;303973;1;1.7;30;Microsoft Word;365;false;NaN;69
-11;false;2022;D;housle;355249;1;1.7;28;Microsoft Word;365;false;NaN;51
-12;false;2022;D;kontrabas;530974;1;1.6;37;LibreOffice;7.0;true;0;36
-13;true;2022;K;varhany;513786;3;1.6;101;LibreOffice;7.2;true;4;15
-14;false;2022;D;zpěv;4168392;1;1.7;78;Microsoft Word;365;true;3;75
-15;true;2022;K;zpěv;296567;1;1.6;52;LibreOffice;7.0;true;3;49
-16;false;2022;D;trombon;733485;1;1.7;35;Microsoft Word;365;true;4;18
-17;false;2022;D;klavír;618845;1;1.7;42;Microsoft Word;365;true;0;0
-18;false;2022;D;zpěv;235181;1;1.4;28;Google Docs;m103;false;NaN;2
-19;false;2022;K;kytara;2550516;1;1.5;45;Microsoft Word;2007;true;2;99
-20;true;2022;K;zpěv;2694325;1;1.6;186;Microsoft Word;2007;false;NaN;18
-21;true;2022;K;zpěv;368681;1;1.4;46;Google Docs;m103;false;NaN;27
-22;false;2022;D;violoncello;2379387;1;1.7;31;Microsoft Word;2019;true;4;42
-23;false;2022;D;zpěv;1354964;1;1.7;36;Microsoft Word;2016;false;NaN;26
-24;false;2022;D;tuba;846386;1;1.5;35;Microsoft Word;2010;false;NaN;59
-25;true;2022;D;flétna;59275790;1;1.6;98;Microsoft Word;2016;false;NaN;4
-26;false;2022;K;trubka;349968;1;1.7;34;Microsoft Word;365;false;NaN;31
-27;true;2022;K;varhany;2653733;1;1.7;52;Microsoft Word;36;true;0;21
-28;false;2022;D;varhany;11140365;1;1.7;60;Microsoft Word;2019;true;1;13
-29;false;2022;D;bicí;5414267;1;1.4;42;Microsoft Word;365;true;1;4
-30;false;2022;D;zpěv;4196063;1;1.5;50;LaTeX;TeXLive 20211117;true;0;0
-31;false;2022;D;flétna;8031187;1;1.4;51;Microsoft Word;365;true;1;9
-32;false;2022;D;zpěv;2819821;1;1.7;45;Microsoft Word;365;false;NaN;78
-33;false;2022;D;zpěv;1055258;1;1.7;34;Microsoft Word;365;true;1;44
-34;false;2022;D;kytara;2900046;1;1.5;97;Microsoft Word;2016;true;0;235
-35;true;2022;K;klarinet;1172904;1;1.7;78;Microsoft Word;2016;true;0;25
+﻿id;vs_titul;rok;forma;obor;velikost;pocet_pdf;verze_pdf;tiskovych_stran;software;verze;pouzita_sablona;odchylky;chyby_typografie
+1;False;2022;D;violoncello;975405;1;1.7;36;Microsoft Word;2019;True;3;20
+2;False;2022;D;zpěv;1930412;1;1.7;45;Microsoft Word;2019;True;1;11
+3;False;2022;K;housle;10570542;1;1.6;38;LaTeX;TexpadTeX;False;NA;6
+4;False;2022;D;trombon;692655;1;1.3;29;Microsoft Word;365;True;1;5
+5;False;2022;D;klarinet;1514617;2;1.5;78;Microsoft Word;2010;True;0;22
+6;False;2022;D;klavír;438423;1;1.3;32;Microsoft Word;365;False;NA;14
+7;False;2022;D;housle;658389;1;1.5;31;Microsoft Word;2010;True;6;63
+8;False;2022;D;zpěv;526477;1;1.7;59;Microsoft Word;365;True;0;1
+9;True;2022;K;klavír;3775171;1;1.5;67;Microsoft Word;2016;True;7;44
+10;False;2022;D;viola;303973;1;1.7;30;Microsoft Word;365;False;NA;69
+11;False;2022;D;housle;355249;1;1.7;28;Microsoft Word;365;False;NA;51
+12;False;2022;D;kontrabas;530974;1;1.6;37;LibreOffice;7.0;True;0;36
+13;True;2022;K;varhany;513786;3;1.6;101;LibreOffice;7.2;True;4;15
+14;False;2022;D;zpěv;4168392;1;1.7;78;Microsoft Word;365;True;3;75
+15;True;2022;K;zpěv;296567;1;1.6;52;LibreOffice;7.0;True;3;49
+16;False;2022;D;trombon;733485;1;1.7;35;Microsoft Word;365;True;4;18
+17;False;2022;D;klavír;618845;1;1.7;42;Microsoft Word;365;True;0;0
+18;False;2022;D;zpěv;235181;1;1.4;28;Google Docs;m103;False;NA;2
+19;False;2022;K;kytara;2550516;1;1.5;45;Microsoft Word;2007;True;2;99
+20;True;2022;K;zpěv;2694325;1;1.6;186;Microsoft Word;2007;False;NA;18
+21;True;2022;K;zpěv;368681;1;1.4;46;Google Docs;m103;False;NA;27
+22;False;2022;D;violoncello;2379387;1;1.7;31;Microsoft Word;2019;True;4;42
+23;False;2022;D;zpěv;1354964;1;1.7;36;Microsoft Word;2016;False;NA;26
+24;False;2022;D;tuba;846386;1;1.5;35;Microsoft Word;2010;False;NA;59
+25;True;2022;D;flétna;59275790;1;1.6;98;Microsoft Word;2016;False;NA;4
+26;False;2022;K;trubka;349968;1;1.7;34;Microsoft Word;365;False;NA;31
+27;True;2022;K;varhany;2653733;1;1.7;52;Microsoft Word;36;True;0;21
+28;False;2022;D;varhany;11140365;1;1.7;60;Microsoft Word;2019;True;1;13
+29;False;2022;D;bicí;5414267;1;1.4;42;Microsoft Word;365;True;1;4
+30;False;2022;D;zpěv;4196063;1;1.5;50;LaTeX;TeXLive 20211117;True;0;0
+31;False;2022;D;flétna;8031187;1;1.4;51;Microsoft Word;365;True;1;9
+32;False;2022;D;zpěv;2819821;1;1.7;45;Microsoft Word;365;False;NA;78
+33;False;2022;D;zpěv;1055258;1;1.7;34;Microsoft Word;365;True;1;44
+34;False;2022;D;kytara;2900046;1;1.5;97;Microsoft Word;2016;True;0;235
+35;True;2022;K;klarinet;1172904;1;1.7;78;Microsoft Word;2016;True;0;25
