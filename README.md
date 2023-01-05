@@ -4,7 +4,7 @@ v&nbsp;prostředí pardubické konzervatoře v&nbsp;souladu s&nbsp;vnitřní sm�
 a&nbsp;to pro různé editory a&nbsp;systémy (aktuálně pouze
 [MS Word](https://github.com/jhlade/KP-APP/tree/master/Microsoft%20Word)
 a&nbsp;[TeX](https://github.com/jhlade/KP-APP/tree/master/TeX), výhledově
-jsou v&nbsp;plánu LibreOffice a&nbsp;Apple Pages).
+jsou v&nbsp;plánu LibreOffice 7.4+ a&nbsp;Apple Pages).
 
 **:paperclip: Rychlé stažení nejnovější verze**
 * [MS Word &mdash; `kp-app.dotx`](./Microsoft%20Word/kp-app.dotx?raw=true) (nepoužívat pro LibreOffice!)
@@ -35,17 +35,13 @@ tiskárny pouze sdělit obsah horního řádku, prostředního řádku, jména a
 v&nbsp;levé části a&nbsp;roku odevzdání práce v&nbsp;pravé části spodního řádku
 požadovaných desek
 
-**Květen 2022**
-* :white_check_mark: všechny práce byly úspěšně odevzdány
-* :information_desk_person: začíná sběr připomínek pro&nbsp;rok 2022/2023
-* :bar_chart: podle prvních vyhodnocení byly šablony využity v&nbsp;70&nbsp;% případů
-* :bar_chart: platformy 80&nbsp;% MS Word, 9&nbsp;% LibreOffice, 6&nbsp;% LaTeX, 6&nbsp;% Google Docs
+**2022/2023**
+* zatím žádné připomínky
 
-**Shrnutí změn 2022**
-* první ucelená šablona pro [TeX](https://github.com/jhlade/KP-APP/tree/master/TeX)
-* přidána minišablona vzoru desek pevné vazby &ndash; vhodné pro&nbsp;použití
-při&nbsp;vlastním zlatotisku
+**2021/2022**
+* :bar_chart: šablony byly využity v&nbsp;70&nbsp;% případů
+* :bar_chart: nástroje: 80&nbsp;% MS Word, 9&nbsp;% LibreOffice, 6&nbsp;% LaTeX, 6&nbsp;% Google Docs
 
-:lollipop: Dílčí dosud nepublikované změny jsou k&nbsp;nalezení
-v&nbsp;odpovídajících
+:lollipop: Dílčí dosud nepublikované změny jednotlivých šablon jsou
+k&nbsp;nalezení v&nbsp;odpovídajících
 [vývojových větvích](https://github.com/jhlade/KP-APP/branches).
