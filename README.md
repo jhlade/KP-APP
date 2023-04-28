@@ -1,6 +1,6 @@
 Tento repozitář má za cíl poskytnout pokusy o&nbsp;pravidelně aktualizované šablony APP
 v&nbsp;prostředí pardubické konzervatoře v&nbsp;souladu s&nbsp;vnitřní směrnicí
-[č.&nbsp;5/19](http://www.konzervatorpardubice.eu/studium/absolutorium/smernice-5-19-absolventske-pisemne-prace),
+[č.&nbsp;5/19](https://www.konzervatorpardubice.eu/o-škole/studium/absolutorium/směrnice-519-absolventské-písemné-práce),
 a&nbsp;to pro různé editory a&nbsp;systémy (aktuálně pouze
 [MS Word](https://github.com/jhlade/KP-APP/tree/master/Microsoft%20Word)
 a&nbsp;[TeX](https://github.com/jhlade/KP-APP/tree/master/TeX), výhledově
