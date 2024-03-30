@@ -4,7 +4,7 @@ v&nbsp;prostředí pardubické konzervatoře v&nbsp;souladu s&nbsp;vnitřní sm�
 a&nbsp;to pro různé editory a&nbsp;systémy (aktuálně pouze
 [MS Word](https://github.com/jhlade/KP-APP/tree/master/Microsoft%20Word)
 a&nbsp;[TeX](https://github.com/jhlade/KP-APP/tree/master/TeX), výhledově
-jsou v&nbsp;plánu LibreOffice 7.4+ a&nbsp;Apple Pages).
+jsou v&nbsp;plánu LibreOffice 24.x+ a&nbsp;Apple Pages).
 
 **:paperclip: Rychlé stažení nejnovější verze**
 * [MS Word &mdash; `kp-app.dotx`](./Microsoft%20Word/kp-app.dotx?raw=true) (nepoužívat pro LibreOffice!)
@@ -35,13 +35,19 @@ tiskárny pouze sdělit obsah horního řádku, prostředního řádku, jména a
 v&nbsp;levé části a&nbsp;roku odevzdání práce v&nbsp;pravé části spodního řádku
 požadovaných desek
 
+**2023/2024**
+* pro MS Word byly přidány prázdné stránky (první a&nbsp;poslední) pro použití
+s&nbsp;pevnou vazbou
+* bylo změněno číslování stran příloh z&nbsp;arabských na římské číslice
+
 **2022/2023**
 * zatím žádné připomínky
 
 **2021/2022**
 * :bar_chart: šablony byly využity v&nbsp;70&nbsp;% případů
-* :bar_chart: nástroje: 80&nbsp;% MS Word, 9&nbsp;% LibreOffice, 6&nbsp;% LaTeX, 6&nbsp;% Google Docs
+* :bar_chart: nástroje: 80&nbsp;% MS Word, 9&nbsp;% LibreOffice, 6&nbsp;% LaTeX,
+6&nbsp;% Google Docs
 
-:lollipop: Dílčí dosud nepublikované změny jednotlivých šablon jsou
-k&nbsp;nalezení v&nbsp;odpovídajících
+:lollipop: Dílčí dosud nepublikované a&nbsp;experimentální změny jednotlivých
+šablon jsou k&nbsp;nalezení v&nbsp;odpovídajících
 [vývojových větvích](https://github.com/jhlade/KP-APP/branches).
