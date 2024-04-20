@@ -39,6 +39,9 @@ požadovaných desek
 * pro MS Word byly přidány prázdné stránky (první a&nbsp;poslední) pro použití
 s&nbsp;pevnou vazbou
 * bylo změněno číslování stran příloh z&nbsp;arabských na římské číslice
+* jako problematické se ukázalo velmi časté otevírání a&nbsp;ukládání `.docx` souborů
+v&nbsp;nevhodných programech, zejména v&nbsp;cloudových prostředích &mdash;
+používejte pro ně pouze MS&nbsp;Word a&nbsp;funkci *Revize: sledování změn*
 
 **2022/2023**
 * zatím žádné připomínky
