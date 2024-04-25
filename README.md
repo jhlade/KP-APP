@@ -38,10 +38,11 @@ požadovaných desek
 **2023/2024**
 * pro MS Word byly přidány prázdné stránky (první a&nbsp;poslední) pro použití
 s&nbsp;pevnou vazbou
-* bylo změněno číslování stran příloh z&nbsp;arabských na římské číslice
+* bylo změněno číslování stran příloh z&nbsp;arabských na římské číslice (2024/2025 to ale zase zrušíme)
 * jako problematické se ukázalo velmi časté otevírání a&nbsp;ukládání `.docx` souborů
 v&nbsp;nevhodných programech, zejména v&nbsp;cloudových prostředích &mdash;
 používejte pro ně pouze MS&nbsp;Word a&nbsp;funkci *Revize: sledování změn*
+* stejným způsobem dokumenty poněkud kontaminuje iPad verze MS&nbsp;Wordu
 
 **2022/2023**
 * zatím žádné připomínky
