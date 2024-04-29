@@ -4,6 +4,18 @@ TARGET=app
 TEX_BIN=xelatex
 BIB_BIN=biber
 
+ifeq ($(OS),Windows_NT)
+	OPEN_BIN = start \"\"
+else
+	UNAME_S := $(shell uname -s)
+		ifeq ($(UNAME_S),Linux)
+        	OPEN_BIN = xdg-open
+    	endif
+    	ifeq ($(UNAME_S),Darwin)
+        	OPEN_BIN = open
+    	endif
+endif
+
 .PHONY: all
 
 all: cover compile softclean
@@ -16,6 +28,9 @@ compile:
 	${BIB_BIN} ${TARGET}
 	${TEX_BIN} ${TARGET}
 	${TEX_BIN} ${TARGET}
+	
+open:
+	${OPEN_BIN} ${TARGET}.pdf
 
 softclean:
 	rm -f *.out *.bbl *.bcf *.dvi *.ps \
