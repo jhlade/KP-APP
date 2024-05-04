@@ -38,7 +38,7 @@ softclean:
 	*.toc *.apc *.run.xml
 
 clean: softclean
-	rm -f *.pdf
+	rm -f *.pdf *.tar.gz
 
 archive: all
 	tar -cf ${TARGET}.tar.gz *.tex *.bib *.pdf Makefile ./struktura ./obrazky
