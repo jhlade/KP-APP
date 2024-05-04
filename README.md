@@ -2,12 +2,12 @@ Tento repozitář má za cíl poskytnout pokusy o&nbsp;pravidelně aktualizovan�
 v&nbsp;prostředí pardubické konzervatoře v&nbsp;souladu s&nbsp;vnitřní směrnicí
 [č.&nbsp;5/19](https://www.konzervatorpardubice.eu/o-škole/studium/absolutorium/směrnice-519-absolventské-písemné-práce),
 a&nbsp;to pro různé editory a&nbsp;systémy (aktuálně pouze
-[MS Word](https://github.com/jhlade/KP-APP/tree/master/Microsoft%20Word)
-a&nbsp;[TeX](https://github.com/jhlade/KP-APP/tree/master/TeX), výhledově
-jsou v&nbsp;plánu LibreOffice 24.x+ a&nbsp;Apple Pages).
+[MS Word](https://github.com/jhlade/KP-APP/tree/master/Microsoft%20Word),
+[TeX](https://github.com/jhlade/KP-APP/tree/master/TeX) a&nbsp;[Google Dokumenty](https://github.com/jhlade/KP-APP/tree/master/Google%20Docs),
+výhledově jsou v&nbsp;plánu LibreOffice 24.x+ a&nbsp;Apple Pages).
 
 **:paperclip: Rychlé stažení nejnovější verze**
-* [MS Word &mdash; `kp-app.dotx`](./Microsoft%20Word/kp-app.dotx?raw=true) (nepoužívat pro LibreOffice!)
+* [MS Word &mdash; `kp-app.dotx`](./Microsoft%20Word/kp-app.dotx?raw=true) (nepoužívat pro LibreOffice a&nbsp;jiné programy!)
 * [TeX &mdash; `app.tar.gz`](./TeX/app.tar.gz?raw=true)
 * [Google Dokumenty](https://docs.google.com/document/d/1oDXDRmXK_mN3aCsDoc5Fa4H7s_K45u-Lzg_K3_hfP7M/edit?usp=sharing) (online v&nbsp;prohlížeči; pouze po přihlášení na školní účet)
 
@@ -36,13 +36,18 @@ v&nbsp;levé části a&nbsp;roku odevzdání práce v&nbsp;pravé části spodn�
 požadovaných desek
 
 **2023/2024**
-* pro MS Word byly přidány prázdné stránky (první a&nbsp;poslední) pro použití
+* pro MS&nbsp;Word byly přidány prázdné stránky (první a&nbsp;poslední) pro použití
 s&nbsp;pevnou vazbou
-* bylo změněno číslování stran příloh z&nbsp;arabských na římské číslice (2024/2025 to ale zase zrušíme)
-* jako problematické se ukázalo velmi časté otevírání a&nbsp;ukládání `.docx` souborů
-v&nbsp;nevhodných programech, zejména v&nbsp;cloudových prostředích &mdash;
-používejte pro ně pouze MS&nbsp;Word a&nbsp;funkci *Revize: sledování změn*
-* stejným způsobem dokumenty poněkud kontaminuje iPad verze MS&nbsp;Wordu
+* bylo změněno číslování stran příloh z&nbsp;arabských na římské číslice
+(2024/2025 to ale zase zrušíme)
+* jako problematické se ukázalo velmi časté otevírání a&nbsp;ukládání `.docx`
+souborů v&nbsp;nevhodných programech, zejména v&nbsp;cloudových
+prostředích &mdash; používejte pro ně pouze MS&nbsp;Word a&nbsp;funkci *Revize:
+sledování změn*
+* stejným způsobem dokumenty poněkud kontaminuje iPad verze MS&nbsp;Wordu;
+případné používání tužky Apple Pencil pro skrolování v&nbsp;dokumentu zanechává
+v&nbsp;některých případech nechtěné vizuální artefakty (vložený *rukopis*), které
+se špatně hledají
 
 **2022/2023**
 * zatím žádné připomínky
