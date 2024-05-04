@@ -4,8 +4,10 @@ Zjednodušené stažení v&nbsp;jednom
 archivu: [`app.tar.gz`](./app.tar.gz?raw=true).
 
 **Organizace**
-* `metadata.tex` - prostředí s&nbsp;proměnnými daty
-* `app.tex` - základní dokument s&nbsp;členěním celé práce
+* `metadata.tex` - prostředí s&nbsp;proměnnými daty, zde vyplníte jména, název
+práce, klíčová slova, a&nbsp;další
+* `app.tex` - základní dokument s&nbsp;členěním celé práce, při výchozím použití
+do něj není nutné zasahovat
 * `text-uvod.tex` - text úvodu práce
 * `text-prace.tex` - vlastní text práce
 * `text-zaver.tex` - text závěru práce
