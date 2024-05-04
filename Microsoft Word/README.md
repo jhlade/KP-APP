@@ -1,7 +1,7 @@
 **Verze pro Microsoft Word**
 
-Rok odevzdání přednastaven na 2023. [Přímo ke stažení zde jako
-`kp-app.dotx`](./kp-app.dotx?raw=true).
+[Přímo ke stažení zde jako `kp-app.dotx`](./kp-app.dotx?raw=true). Nepoužívejte
+v&nbsp;jiných programech, není pro ně stavěná.
 
 **Tato šablona byla po menších úpravách úspěšně použita i&nbsp;pro**
 * FF UK
@@ -9,7 +9,7 @@ Rok odevzdání přednastaven na 2023. [Přímo ke stažení zde jako
 * PdF UHK
 
 Dodatečná šablona pro pevné desky ([`kp-app-desky.dotx`](./kp-app-desky?raw=true)) je
-pouze orientační. Při&nbsp;požadavku na&nbsp;vlastní zlatotisk (třeba
+pouze orientační! Pouze při&nbsp;požadavku na&nbsp;vlastní zlatotisk (třeba
 s&nbsp;logem školy) odevzdejte jako plně vektorové PDF.
 
 **přehled hlavních definovaných stylů**
@@ -26,6 +26,8 @@ nebude umístěn v&nbsp;obsahu*
 * `1-Nadpis pro přílohy` - hlavní nadpis pro přílohy, číslování pomocí velkých
 písmen abecedy, nadpisy budou zahrnuty v&nbsp;obsahu *Seznam příloh*
 * `1-Nadpis bez čísla` - povinné nečíslované nadpisy Úvod, Závěr, Literatura
-* `2-Podnadpis bez čísla` - *nepoužívat mimo Úvod*, typické použití je
-pro&nbsp;jemnější členění *Úvodu*, kde se může samostatně nacházet *Motivace*,
-*Stav bádání* apod.
+* `2-Podnadpis bez čísla` - *nepoužívat mimo Úvod nebo Seznam literatury*,
+typické použití je pro&nbsp;jemnější členění *Úvodu*, kde se může samostatně
+nacházet *Motivace*, *Stav bádání* apod.
+* `Vlastní seznam literatury` - upravený seznam s oddělenými odstavci
+pro&nbsp;uvedení jednotlivých citovaných položek
