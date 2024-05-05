@@ -8,7 +8,7 @@ v&nbsp;jiných programech, není pro ně stavěná.
 * HAMU
 * PdF UHK
 
-Dodatečná šablona pro pevné desky ([`kp-app-desky.dotx`](./kp-app-desky?raw=true)) je
+Dodatečná šablona pro pevné desky ([`kp-app-desky.dotx`](./kp-app-desky.dotx?raw=true)) je
 pouze orientační! Pouze při&nbsp;požadavku na&nbsp;vlastní zlatotisk (třeba
 s&nbsp;logem školy) odevzdejte jako plně vektorové PDF.
 
