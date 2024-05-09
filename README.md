@@ -35,7 +35,7 @@ tiskárny pouze sdělit obsah horního řádku, prostředního řádku, jména a
 v&nbsp;levé části a&nbsp;roku odevzdání práce v&nbsp;pravé části spodního řádku
 požadovaných desek
 
-**2023/2024**
+**[2023/2024](https://github.com/jhlade/KP-APP/blob/master/statistiky/2023-2034.md)**
 * :bar_chart: šablony byly využity v&nbsp;80&nbsp;% případů
 * :bar_chart: nástroje: MS Word 81&nbsp;%, LibreOffice 8&nbsp;%, GoogleDocs 8&nbsp;%, ONLYOFFICE 3&nbsp;%
 * pro MS&nbsp;Word byly přidány prázdné stránky (první a&nbsp;poslední) pro použití
