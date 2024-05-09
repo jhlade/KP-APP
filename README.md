@@ -36,6 +36,8 @@ v&nbsp;levé části a&nbsp;roku odevzdání práce v&nbsp;pravé části spodn�
 požadovaných desek
 
 **2023/2024**
+* :bar_chart: šablony byly využity v&nbsp;80&nbsp;% případů
+* :bar_chart: nástroje: MS Word 81&nbsp;%, LibreOffice 8&nbsp;%, GoogleDocs 8&nbsp;%, ONLYOFFICE 3&nbsp;%
 * pro MS&nbsp;Word byly přidány prázdné stránky (první a&nbsp;poslední) pro použití
 s&nbsp;pevnou vazbou
 * bylo změněno číslování stran příloh z&nbsp;arabských na římské číslice
