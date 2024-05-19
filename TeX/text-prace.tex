@@ -14,13 +14,7 @@ o~samostatnosti}, \textit{Obsah}, \textit{Úvod}, vlastní text práce,
 \textit{Seznam literatury} a~přílohy.\footnote{Všechny zmíněné části jsou
 v~předkládaných šablonách již předpřipraveny}
 
-\begin{figure}[!ht]
-	\begin{center}
-		\includegraphics[width=\textwidth]{./obrazky/diagram-app.pdf}
-    \end{center}
-
-	\caption{Struktura práce}
-\end{figure}
+\obrazek{./obrazky/diagram-app.pdf}{Struktura práce}
 
 \podnadpis{Rozsah práce}
 Minimálním rozsahem práce se rozumí nejnižší možný počet stran vlastního textu,
@@ -48,7 +42,7 @@ a~umístění kapitol, stránek a~příloh.
 
 \podnadpis{Forma odevzdání}
 Práce se odevzdává výhradně ve~formátu PDF (Portable Document Format). PDF
-soubor \texttt{app.pdf} vznikne automaticky překladem v~prostředí \XeLaTeX
+soubor \texttt{app.pdf} vznikne automaticky překladem v~prostředí {\XeLaTeX}
 jednoduchým zavoláním \texttt{make}.
 
 % ------------------------------------------------------------------------------
@@ -98,20 +92,17 @@ uvozovek (\texttt{{\textbackslash}uv\{\}}) také \juv{jednoduché uvozovky}
 (\texttt{{\textbackslash}juv\{\}}), které jsou vhodné pro~zahrnutí přímé řeči
 v~přímé řeči.
 
+Pro zjednodušené vkládání obrázků je k~dispozici velmi přímočarý příkaz
+\texttt{{\textbackslash}obrazek\{soubor.pdf\}\{Titulek obrázku\}[šířka]},
+přičemž neuvedení šířky automaticky použije maximální šířku odstavce.
 Vkládání obrázků není nijak omezeno, řídí se pouze obecnými pravidly --
 k~použití jsou vhodné zejména vektorové formáty (PDF), obrázek by neměl být
 větší než třetina výšky tiskové strany (v~tom případě patří do~příloh,
 viz~ukázka v~příloze~\ref{priloha:partitura}), každý obrázek by měl mít svůj
-popisek a~musí být v~předcházejícím odstavci alespoň stručně uveden: Následující
-obrázek zachycuje logo školy.
+popisek a~musí být v~předcházejícím odstavci alespoň stručně uveden. Následující
+obrázek například zachycuje logo školy.
 
-\begin{figure}[!ht]
-	\begin{center}
-		\includegraphics[width=60mm]{./obrazky/kp-logo.pdf}
-    \end{center}
-
-	\caption{Logo: Konzervatoř Pardubice}
-\end{figure}
+\obrazek{./obrazky/kp-logo.pdf}{Logo: Konzervatoř Pardubice}[60mm]
 
 \noindent
 Odstavec ihned za~obrázkem není na~svém prvním řádku odsazen
