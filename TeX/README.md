@@ -3,6 +3,9 @@ Biber). Předpokládá se alespoň základní orientace v&nbsp;syntaxi LaTeXu.
 Zjednodušené stažení v&nbsp;jednom
 archivu: [`app.tar.gz`](./app.tar.gz?raw=true).
 
+TeXLive jako prostředí lze i&nbsp;dockerizovat z&nbsp;oficiálního
+obrazu `texlive/texlive`.
+
 **Organizace**
 * `metadata.tex` - prostředí s&nbsp;proměnnými daty, zde vyplníte jména, název
 práce, klíčová slova, a&nbsp;další
