@@ -40,6 +40,12 @@ požadovaných desek
 
 ---
 
+**2024/2025**
+* pro správné fungování MS Word šablony je nutné používat Office Open XML formáty
+Microsoftu (tj. ukládat dokumenty jako soubory `.docx`), nikoliv ODF
+
+---
+
 **[2023/2024](https://github.com/jhlade/KP-APP/blob/master/statistiky/2023-2034.md)**
 * :bar_chart: šablony byly využity v&nbsp;80&nbsp;% případů
 * :bar_chart: nástroje: MS Word 81&nbsp;%, LibreOffice 8&nbsp;%, GoogleDocs 8&nbsp;%, ONLYOFFICE 3&nbsp;%
