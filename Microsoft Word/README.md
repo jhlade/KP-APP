@@ -3,19 +3,29 @@
 [Přímo ke stažení zde jako `kp-app.dotx`](./kp-app.dotx?raw=true). Nepoužívejte
 v&nbsp;jiných programech, není pro ně stavěná.
 
-**Tato šablona byla po menších úpravách úspěšně použita i&nbsp;pro**
-* FF UK
+**Tato šablona byla po minimálních úpravách úspěšně použita i&nbsp;pro**
+* UK FF
 * HAMU
-* PdF UHK
+* UHK PdF
+
+**Jiné poznámky**
 
 Dodatečná šablona pro pevné desky ([`kp-app-desky.dotx`](./kp-app-desky.dotx?raw=true)) je
 pouze orientační! Pouze při&nbsp;požadavku na&nbsp;vlastní zlatotisk (třeba
 s&nbsp;logem školy) odevzdejte jako plně vektorové PDF.
 
-**přehled hlavních definovaných stylů**
+Aby zůstala zachována funkčnost šablony i v uložených na ní založených
+dokumentech, je potřeba je ukládat ve formátu Microsoft OOXML (přípona `.docx`),
+nikoliv jako ODF (soubory `.odt`). Tato volba se provádí při prvním spuštění MS
+Office a jde později změnit v nabídce Soubor-Možnosti-Ukládání. Případně lze
+každý soubor explicitně uložit do formátu v nabídce podporovaných typů.
+![Uložení souboru jako `.docx`](https://github.com/jhlade/KP-APP/blob/assets/editory/msword-docx.png?raw=true)
+
+**Přehled hlavních definovaných stylů**
 
 * `Základní text` - tímto stylem jsou psány všechny odstavce vlastního textu
-práce
+práce (nepoužíváme styl `Normální` kvůli konfliktům, ale třeba se to časem povede
+srovnat)
 * `1-Nadpis` - hlavní nadpis kapitoly, vždy začíná na nové stránce, pod tímto
 nadpisem *musí* být vždy umístěn stručný odstavec textu s&nbsp;úvodem do dané
 kapitoly
@@ -31,3 +41,5 @@ typické použití je pro&nbsp;jemnější členění *Úvodu*, kde se může sa
 nacházet *Motivace*, *Stav bádání* apod.
 * `Vlastní seznam literatury` - upravený seznam s oddělenými odstavci
 pro&nbsp;uvedení jednotlivých citovaných položek
+* dále existují nadpisy bez zařazení do obsahu - tyto nadpisy tedy nebudou
+zobrazeny v hlavním obsahu práce
