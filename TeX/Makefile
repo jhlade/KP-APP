@@ -18,27 +18,30 @@ endif
 
 .PHONY: all
 
-all: cover compile softclean
+all: cover compile softclean ## Překlad a vytvoření PDF (app.pdf)
 
-cover:
-	${TEX_BIN} ${TARGET}-desky
+help:
+	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-15s\033[0m %s\n", $$1, $$2}'
 
-compile:
-	${TEX_BIN} ${TARGET}
-	${BIB_BIN} ${TARGET}
-	${TEX_BIN} ${TARGET}
-	${TEX_BIN} ${TARGET}
+cover: ## Tvorba desek (app-desky.pdf)
+	@${TEX_BIN} ${TARGET}-desky
+
+compile: ## Kompilace práce do PDF (app.pdf)
+	@${TEX_BIN} ${TARGET}
+	@${BIB_BIN} ${TARGET}
+	@${TEX_BIN} ${TARGET}
+	@${TEX_BIN} ${TARGET}
 	
-open:
+open: ## Otevřená výsledku v prohlížeči PDF
 	${OPEN_BIN} ${TARGET}.pdf
 
-softclean:
-	rm -f *.out *.bbl *.bcf *.dvi *.ps \
+softclean: ## Smazání dočasných souborů
+	@rm -f *.out *.bbl *.bcf *.dvi *.ps \
 	*.log *.lof *.aux *.blg *.loa *.lot \
 	*.toc *.apc *.run.xml
 
-clean: softclean
-	rm -f *.pdf *.tar.gz
+clean: softclean ## Smazání dočasných souborů a produktů
+	@rm -f *.pdf *.tar.gz
 
-archive: all
-	tar -cf ${TARGET}.tar.gz *.tex *.bib *.pdf Makefile ./struktura ./obrazky
+archive: all ## Vytvoření archivu ve formátu tar.gz
+	@tar -cf ${TARGET}.tar.gz *.tex *.bib *.pdf Makefile ./struktura ./obrazky
