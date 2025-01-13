@@ -234,6 +234,38 @@
 \counterwithin{table}{section}
 
 % ------------------------------------------------------------------------------
+% ZÁHLAVÍ A ZÁPATÍ STRÁNEK
+% ------------------------------------------------------------------------------
+
+% záhlaví a zápatí
+\usepackage{fancyhdr}
+
+% výchozí záhlaví a zápatí stránky
+\lhead{}
+\rhead{}
+\cfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% základní styl stránky - číslo v zápatí uprostřed
+\fancypagestyle{StyleBase} {
+	\fancyhf{}
+	\lhead{}
+	\rhead{}
+	\cfoot{\thepage}
+	\rfoot{}
+}
+
+% styl příloh - přidáno "Přílohy" v zápatí vpravo
+\fancypagestyle{StyleAppendix} {
+	\fancyhf{}
+	\lhead{}
+	\rhead{}
+	\cfoot{\thepage}
+	\rfoot{\textcolor{gray}{\textit{Přílohy}}}
+}
+
+% ------------------------------------------------------------------------------
 % PŘÍKAZY PRO NADPISY
 % ------------------------------------------------------------------------------
 
@@ -277,40 +309,27 @@
 }
 
 % ------------------------------------------------------------------------------
-% ZÁHLAVÍ A ZÁPATÍ STRÁNEK
-% ------------------------------------------------------------------------------
-
-% záhlaví a zápatí
-\usepackage{fancyhdr}
-
-% výchozí záhlaví a zápatí stránky
-\lhead{}
-\rhead{}
-\cfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
-
-% základní styl stránky - číslo v zápatí uprostřed
-\fancypagestyle{StyleBase} {
-	\fancyhf{}
-	\lhead{}
-	\rhead{}
-	\cfoot{\thepage}
-	\rfoot{}
-}
-
-% styl příloh - přidáno "Přílohy" v zápatí vpravo
-\fancypagestyle{StyleAppendix} {
-	\fancyhf{}
-	\lhead{}
-	\rhead{}
-	\cfoot{\thepage}
-	\rfoot{\textit{Přílohy}}
-}
-
-% ------------------------------------------------------------------------------
 % JINÉ VLASTNÍ PŘÍKAZY
 % ------------------------------------------------------------------------------
+
+% vložení obrázku
+\makeatletter
+\def\obrazek#1#2{%
+  \@ifnextchar[{\obrazek@i{#1}{#2}}{\obrazek@i{#1}{#2}[]}}
+\def\obrazek@i#1#2[#3]{%
+  \begin{figure}[!ht]
+	\begin{center}
+		\ifx\relax#3\relax
+        \includegraphics[width=\textwidth]{#1}
+        \else
+        \includegraphics[width=#3]{#1}
+        \fi
+    \end{center}
+
+	\caption{#2}
+  \end{figure}
+}
+\makeatother
 
 % jednoduché uvozovky
 \newcommand\juv[1]{\quotesinglbase{#1}\textquoteleft}

@@ -1,7 +1,11 @@
-Připraveno pro [TeXLive](https://www.tug.org/texlive/) (XeLaTeX/LuaLaTeX,
-Biber). Předpokládá se alespoň základní orientace v&nbsp;syntaxi LaTeXu.
-Zjednodušené stažení v&nbsp;jednom
-archivu: [`app.tar.gz`](./app.tar.gz?raw=true).
+Připraveno pro distrubuci [TeXLive](https://www.tug.org/texlive/)
+(XeLaTeX/LuaLaTeX a&nbsp;Biber), ale neměl by být problém použít jinou.
+Předpokládá se alespoň základní orientace v&nbsp;syntaxi LaTeXu. Zjednodušené
+stažení v&nbsp;jednom archivu: [`app.tar.gz`](./app.tar.gz?raw=true).
+
+Distribuci TeXLive lze i&nbsp;dockerizovat z&nbsp;oficiálního
+obrazu `texlive/texlive`. Pro snadný běh na Windows bude potřeba
+doinstalovat *MinGW*, případně používat celý TeX z&nbsp;prostředí WSL.
 
 **Organizace**
 * `metadata.tex` - prostředí s&nbsp;proměnnými daty, zde vyplníte jména, název
@@ -25,3 +29,5 @@ uložen jako `app.pdf` s&nbsp;odpovídajícími metadaty, vznikne také návrh
 desek `app-desky.pdf`. Archivace (výsledné) práce je možné provést zavoláním
 `make archive`, čímž vznikne archiv `app.tar.gz` obsahující čistý TeXový kód
 a&nbsp;výsledné PDF.
+
+Všechny dílčí úlohy s popisem lze zjistit zavoláním `make help`.
