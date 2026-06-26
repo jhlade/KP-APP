@@ -1,0 +1,18 @@
+# LaTeX build artefakty (xelatex + biber)
+*.aux
+*.log
+*.out
+*.bbl
+*.bcf
+*.blg
+*.loa
+*.lot
+*.toc
+*.apc
+*.run.xml
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.xdv
+*.dvi
+*.ps
