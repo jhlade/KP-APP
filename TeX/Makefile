@@ -43,8 +43,11 @@ softclean: ## Smazání dočasných souborů
 clean: softclean ## Smazání dočasných souborů a produktů
 	@rm -f *.pdf *.tar.gz *.zip
 
+# app.tex jako hlavní dokument
+TEX_FILES = ${TARGET}.tex $(filter-out ${TARGET}.tex,$(wildcard *.tex))
+
 archive: all ## Vytvoření archivu ve formátu tar.gz
-	@tar -czf ${TARGET}.tar.gz *.tex *.bib *.pdf Makefile ./struktura ./obrazky
+	@tar -czf ${TARGET}.tar.gz ${TEX_FILES} *.bib *.pdf Makefile ./struktura ./obrazky
 
 archive-zip: all ## Vytvoření archivu ve formátu zip (pro nahrání do Overleaf)
-	@zip -r ${TARGET}.zip *.tex *.bib *.pdf Makefile ./struktura ./obrazky
+	@zip -r ${TARGET}.zip ${TEX_FILES} *.bib *.pdf Makefile ./struktura ./obrazky
