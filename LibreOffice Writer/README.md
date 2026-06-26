@@ -27,3 +27,17 @@ přechod z&nbsp;titulních stran do prostředí číslovaných stránek
 Zatím nejsou použity explicitní jiné definice, upraveny byly pouze ty výchozí.
 Pro změnu globálního písma (předvoleno Times New Roman pro porovnatelný vzhled
 s&nbsp;Wordem) upravte styl `Výchozí styl odstavce`.
+
+**Volitelné prázdné strany a poděkování**
+
+Prázdné strany okolo dokumentu a stránka s&nbsp;poděkováním jsou řešeny jako
+skrývatelné oddíly – přepínají se v&nbsp;nabídce **Formát → Oddíly**:
+
+* `Prázdná strana na začátku` – prázdná nečíslovaná strana před titulní stranou
+(ve výchozím stavu skrytá)
+* `Prázdná strana na konci` – prázdná nečíslovaná strana za přílohami (ve
+výchozím stavu skrytá)
+* `Poděkování` – strana s&nbsp;poděkováním (ve výchozím stavu zobrazená)
+
+Stranu **přidáte** odškrtnutím volby *Skrýt* u&nbsp;daného oddílu, **odeberete**
+jejím zaškrtnutím.
