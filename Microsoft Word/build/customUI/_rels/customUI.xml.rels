@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+  <Relationship Id="rIdBlankPages" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="images/abs_prace_icon_blank_pages_32.png"/>
+</Relationships>

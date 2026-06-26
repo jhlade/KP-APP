@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui" onLoad="Ribbon_OnLoad">
+  <ribbon>
+    <tabs>
+      <tab id="tabAbsPrace" label="Abs. práce" insertAfterMso="TabHome">
+        <group id="grpTiskovaUprava" label="Tisková úprava">
+          <toggleButton id="btnPrazdneOkolo"
+                  label="Prázdné okolo"
+                  screentip="Vložit / smazat prázdnou stránku na začátku i na konci dokumentu"
+                  supertip="Vloží dvě samostatné sekce: jednu prázdnou stránku před dokument a jednu prázdnou stránku za dokument. Další kliknutí je obě odebere."
+                  size="large"
+                  image="rIdBlankPages"
+                  getPressed="Ribbon_GetPressed_PrazdneOkolo"
+                  onAction="Ribbon_TogglePrazdneOkolo" />
+        </group>
+        <group id="grpVolitelneCasti" label="Volitelné části">
+          <toggleButton id="btnPodekovani"
+                  label="Poděkování"
+                  screentip="Vložit / smazat nepovinné poděkování"
+                  supertip="V této ukázce se poděkování vloží na aktuální pozici kurzoru jako samostatný oddíl. Později lze cíl změnit například na konec oddílu XYZ."
+                  size="large"
+                  imageMso="HappyFace"
+                  getPressed="Ribbon_GetPressed_Podekovani"
+                  onAction="Ribbon_TogglePodekovani" />
+        </group>
+        <group id="grpUdrzba" label="Údržba dokumentu">
+          <button id="btnAktualizovatPole"
+                  label="Aktualizovat pole"
+                  screentip="Aktualizovat všechna pole v dokumentu"
+                  size="normal"
+                  imageMso="Refresh"
+                  onAction="Ribbon_AktualizovatPole" />
+          <button id="btnInfo"
+                  label="Info"
+                  screentip="Zobrazit informaci o volitelných blocích"
+                  size="normal"
+                  imageMso="Info"
+                  onAction="Ribbon_InfoVolitelneStranky" />
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>
