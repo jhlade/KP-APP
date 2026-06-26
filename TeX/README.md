@@ -28,7 +28,7 @@ automaticky zvolí správný překladač bez nutnosti ručního nastavení.
 
 Nejjednodušší způsob, jak práci rozpracovat bez instalace čehokoliv lokálně.
 
-[![Open in Overleaf](https://img.shields.io/badge/Open%20in-Overleaf-47A141?style=for-the-badge&logo=overleaf&logoColor=white)](https://www.overleaf.com/docs?snip_uri=https%3A%2F%2Fraw.githubusercontent.com%2Fjhlade%2FKP-APP%2Ftex%2FTeX%2Fapp.zip)
+[![Open in Overleaf](https://img.shields.io/badge/Open%20in-Overleaf-47A141?style=for-the-badge&logo=overleaf&logoColor=white)](https://www.overleaf.com/docs?snip_uri=https%3A%2F%2Fraw.githubusercontent.com%2Fjhlade%2FKP-APP%2Ftex%2FTeX%2Fapp.zip&engine=xelatex)
 
 Tlačítko naimportuje aktuální [`app.zip`](./app.zip?raw=true) přímo z&nbsp;větve
 `tex` jako nový Overleaf projekt. Pokud tlačítko nefunguje (např. po&nbsp;sloučení
@@ -45,10 +45,13 @@ s&nbsp;`\documentclass` v&nbsp;kořeni projektu. Desky (`desky/app-desky.tex`)
 jsou úmyslně v&nbsp;podadresáři, aby je Overleaf nezvolil omylem jako hlavní
 dokument místo práce. Pokud by si je Overleaf přesto zvolil sám, přepněte
 hlavní dokument přes **Menu → Main document** na&nbsp;`app.tex`.
-4. Díky `% !TeX program = xelatex` na&nbsp;prvním řádku obou dokumentů Overleaf
-sám nastaví překladač na&nbsp;XeLaTeX a&nbsp;biblatex/Biber se autodetekuje
-z&nbsp;`\usepackage[backend=biber]{biblatex}` v&nbsp;`sablona.tex` - žádné
-další ruční nastavení v&nbsp;Menu nepotřebujete.
+4. Tlačítko výše obsahuje parametr `&engine=xelatex`, takže Overleaf nastaví
+správný překladač automaticky. Pokud nahráváte `.zip` manuálně (bez tlačítka),
+tento parametr se neuplatní - přepněte si v&nbsp;**Menu → Compiler** ručně na
+**XeLaTeX** (Overleaf u&nbsp;čerstvě nahraného projektu defaultně použije
+pdfLaTeX, na&nbsp;kterém build selže na&nbsp;balíčku `xunicode`). Biblatex/Biber
+se po&nbsp;nastavení správného překladače autodetekuje z&nbsp;
+`\usepackage[backend=biber]{biblatex}` v&nbsp;`sablona.tex` automaticky.
 
 ---
 
