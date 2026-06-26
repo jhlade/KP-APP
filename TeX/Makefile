@@ -5,7 +5,7 @@ TEX_BIN=xelatex
 BIB_BIN=biber
 
 ifeq ($(OS),Windows_NT)
-	OPEN_BIN = start \"\"
+	OPEN_BIN = start ""
 else
 	UNAME_S := $(shell uname -s)
 		ifeq ($(UNAME_S),Linux)
@@ -41,7 +41,10 @@ softclean: ## Smazání dočasných souborů
 	*.toc *.apc *.run.xml
 
 clean: softclean ## Smazání dočasných souborů a produktů
-	@rm -f *.pdf *.tar.gz
+	@rm -f *.pdf *.tar.gz *.zip
 
 archive: all ## Vytvoření archivu ve formátu tar.gz
-	@tar -cf ${TARGET}.tar.gz *.tex *.bib *.pdf Makefile ./struktura ./obrazky
+	@tar -czf ${TARGET}.tar.gz *.tex *.bib *.pdf Makefile ./struktura ./obrazky
+
+archive-zip: all ## Vytvoření archivu ve formátu zip (pro nahrání do Overleaf)
+	@zip -r ${TARGET}.zip *.tex *.bib *.pdf Makefile ./struktura ./obrazky
