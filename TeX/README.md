@@ -6,7 +6,7 @@ sazba předpokládá alespoň základní orientaci v&nbsp;syntaxi LaTeXu.
 práce, klíčová slova, a&nbsp;další
 * `app.tex` - základní dokument s&nbsp;členěním celé práce, při výchozím použití
 do něj není nutné zasahovat
-* `app-desky.tex` - samostatný dokument s&nbsp;deskami práce
+* `desky/app-desky.tex` - samostatný dokument s&nbsp;deskami práce (ilustrační)
 * `text-uvod.tex` - text úvodu práce
 * `text-prace.tex` - vlastní text práce
 * `text-zaver.tex` - text závěru práce
@@ -18,9 +18,9 @@ dokumentu
 * `struktura/shrnuti-cizi.tex` - text anotace v&nbsp;cizím jazyce
 * `struktura/slovnik.tex` - slovník pro úpravu zalamování slov
 
-Oba hlavní dokumenty (`app.tex` i&nbsp;`app-desky.tex`) mají na&nbsp;prvním řádku
-direktivu `% !TeX program = xelatex` - editory a&nbsp;Overleaf díky ní automaticky
-zvolí správný překladač bez ručního nastavení.
+Oba hlavní dokumenty (`app.tex` i&nbsp;`desky/app-desky.tex`) mají na&nbsp;prvním
+řádku direktivu `% !TeX program = xelatex` - editory a&nbsp;Overleaf díky ní
+automaticky zvolí správný překladač bez nutnosti ručního nastavení.
 
 ---
 
@@ -39,9 +39,12 @@ nebo si lokálně (pokud máte TeXLive/MacTeX) vytvořte čerstvý zip příkaze
 `make archive-zip`.
 2. V&nbsp;Overleaf zvolte **New Project → Upload Project** a&nbsp;nahrajte
 výsledný `.zip`.
-3. Projekt obsahuje dva nezávislé hlavní dokumenty - `app.tex` (text práce)
-a&nbsp;`app-desky.tex` (desky). V&nbsp;Overleaf přes **Menu → Main document**
-zvolte, který z&nbsp;nich se má aktuálně kompilovat.
+3. Hlavním dokumentem projektu je `app.tex` (text práce) - Overleaf by ho měl
+po&nbsp;importu zvolit automaticky, protože je to jediný soubor
+s&nbsp;`\documentclass` v&nbsp;kořeni projektu. Desky (`desky/app-desky.tex`)
+jsou úmyslně v&nbsp;podadresáři, aby je Overleaf nezvolil omylem jako hlavní
+dokument místo práce. Pokud by si je Overleaf přesto zvolil sám, přepněte
+hlavní dokument přes **Menu → Main document** na&nbsp;`app.tex`.
 4. Díky `% !TeX program = xelatex` na&nbsp;prvním řádku obou dokumentů Overleaf
 sám nastaví překladač na&nbsp;XeLaTeX a&nbsp;biblatex/Biber se autodetekuje
 z&nbsp;`\usepackage[backend=biber]{biblatex}` v&nbsp;`sablona.tex` - žádné
@@ -65,7 +68,7 @@ obrazu `texlive/texlive`.
 **Použití Makefile**<br>
 Překlad do&nbsp;PDF lze zajistit jednoduchým zavoláním `make`, konečný výsledek
 bude uložen jako `app.pdf` s&nbsp;odpovídajícími metadaty, vznikne také návrh
-desek `app-desky.pdf`.
+desek `desky/app-desky.pdf`.
 
 * `make` - přeloží práci i&nbsp;desky a&nbsp;uklidí dočasné soubory
 * `make open` - otevře `app.pdf` ve&nbsp;výchozím prohlížeči (macOS `open`,
@@ -103,10 +106,10 @@ biber app
 xelatex app
 xelatex app
 ```
-a&nbsp;pro desky `xelatex app-desky`.
+a&nbsp;pro desky `cd desky && xelatex app-desky`.
 
 **Možnost C - GUI editor**<br>
-Otevřete `app.tex` (nebo `app-desky.tex`) v&nbsp;editoru jako
+Otevřete `app.tex` (nebo `desky/app-desky.tex`) v&nbsp;editoru jako
 [TeXstudio](https://www.texstudio.org/) nebo MiKTeX Console - direktiva
 `% !TeX program = xelatex` na&nbsp;prvním řádku zajistí automatickou volbu
 správného překladače.
