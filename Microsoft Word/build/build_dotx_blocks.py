@@ -11,7 +11,11 @@ Bloky (vsechny ve vychozim stavu PRITOMNE):
   - OPT_THANKS       obeplne spacer (567 b.) + SDT podekovani + NOVY koncovy
                      zalom stranky. Zalom za podpisem zustava natvrdo mimo
                      zalozku, takze Obsah je vzdy na vlastni strance.
-  - OPT_THANKS_ANCHOR  nulova kotva tesne pred Obsahem pro znovuvlozeni.
+  - OPT_THANKS_ANCHOR  obepina odstavec Obsahu (continuous zalom) jako kotvu
+                     pro znovuvlozeni; nenulova, aby ji mazani bloku nespolklo.
+
+Navic odstrani rozbite pole "= jm" u podpisu (odkazuje na neexistujici
+zalozku, pri aktualizaci poli ukazuje "Nedefinovana zalozka").
 
 Upravuje kp-app.dotx na miste. Hlida pocty vyskytu; pokud uz zalozky
 existuji, skonci bez zapisu (idempotence).
@@ -53,6 +57,17 @@ def main():
 
     if "OPT_BLANK_FRONT" in d or "OPT_THANKS" in d or "OPT_BLANK_BACK" in d:
         raise SystemExit("Zalozky uz existuji - konec bez zapisu (idempotence).")
+
+    # --- Odstraneni rozbiteho pole "= jm" u podpisu ---
+    # Formula field odkazuje na neexistujici zalozku "jm" -> pri aktualizaci
+    # poli (makro Aktualizovat pole) ukaze "Nedefinovana zalozka". Jmeno uz
+    # zobrazuje content control "Podpis", pole je zbytecne. Mazeme cele.
+    jm_field = (
+        '<w:r w:rsidR="00B15F5D"><w:fldChar w:fldCharType="begin"/></w:r>'
+        '<w:r w:rsidR="00B15F5D"><w:instrText xml:space="preserve"> = jm \\* MERGEFORMAT </w:instrText></w:r>'
+        '<w:r w:rsidR="00B15F5D"><w:fldChar w:fldCharType="end"/></w:r>'
+    )
+    d = repl(d, jm_field, "")
 
     # --- FRONT: obal [729D810C + 1F6CA0DF] zalozkou OPT_BLANK_FRONT ---
     d = repl(
@@ -111,6 +126,7 @@ def main():
     print(f"Upraveno: {TARGET_DOTX}")
     print("  + OPT_BLANK_FRONT, OPT_BLANK_BACK, OPT_THANKS, OPT_THANKS_ANCHOR")
     print("  + koncovy zalom stranky za podekovanim")
+    print("  - rozbite pole '= jm' u podpisu")
 
 
 if __name__ == "__main__":
