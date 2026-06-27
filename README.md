@@ -1,8 +1,8 @@
-**:paperclip: Rychlé stažení nejnovější verze kliknutím ZDE:**
-* [:arrow_down: MS Word &mdash; `kp-app.dotx`](./Microsoft%20Word/kp-app.dotx?raw=true) (nepoužívat pro LibreOffice a&nbsp;jiné programy!)
-* [:arrow_down: LibreOffice &mdash; `kp-app.ott`](./LibreOffice%20Writer/kp-app.ott?raw=true) (nepoužívat pro MS Word a&nbsp;jiné programy!)
-* [:arrow_down: TeX &mdash; `app.tar.gz`](./TeX/app.tar.gz?raw=true)
-* [:arrow_upper_right: Google Dokumenty](https://docs.google.com/document/d/1oDXDRmXK_mN3aCsDoc5Fa4H7s_K45u-Lzg_K3_hfP7M/edit?usp=sharing) (online v&nbsp;prohlížeči; pouze po přihlášení na školní účet)
+**📎 Rychlé stažení nejnovější verze kliknutím ZDE:**
+* [⬇️ MS Word &mdash; `kp-app.dotx`](./Microsoft%20Word/kp-app.dotx?raw=true), s makry [⬇️ `kp-app.dotm`](./Microsoft%20Word/kp-app.dotm?raw=true) (nepoužívat pro LibreOffice a&nbsp;jiné programy!)
+* [⬇️ LibreOffice &mdash; `kp-app.ott`](./LibreOffice%20Writer/kp-app.ott?raw=true) (nepoužívat pro MS Word a&nbsp;jiné programy!)
+* [⬇️ TeX &mdash; `app.tar.gz`](./TeX/app.tar.gz?raw=true) ; [↗️ Otevřít v prostředí Overleaf](https://www.overleaf.com/docs?snip_uri=https%3A%2F%2Fraw.githubusercontent.com%2Fjhlade%2FKP-APP%2Ftex%2FTeX%2Fapp.zip&engine=xelatex)
+* [↗️ Google Dokumenty](https://docs.google.com/document/d/1oDXDRmXK_mN3aCsDoc5Fa4H7s_K45u-Lzg_K3_hfP7M/edit?usp=sharing) (online v&nbsp;prohlížeči; pouze po přihlášení na školní účet)
 
 Tento repozitář má za cíl poskytnout pokusy o&nbsp;pravidelně aktualizované šablony APP
 v&nbsp;prostředí pardubické konzervatoře v&nbsp;souladu s&nbsp;vnitřní směrnicí
@@ -14,7 +14,7 @@ a&nbsp;to pro různé editory a&nbsp;systémy (aktuálně
 a&nbsp;[Google Dokumenty](https://github.com/jhlade/KP-APP/tree/master/Google%20Docs),
 výhledově jsou v&nbsp;plánu Apple Pages a&nbsp;další).
 
-**:orange_book: Současná doporučená struktura práce dle směrnice č.&nbsp;5/19**
+**📙 Současná doporučená struktura práce dle směrnice č.&nbsp;5/19**
 ![Doporučená struktura APP](https://github.com/jhlade/KP-APP/blob/assets/struktura/diagram-app.svg?raw=true)
 
 1. Titulní list
@@ -29,14 +29,15 @@ výhledově jsou v&nbsp;plánu Apple Pages a&nbsp;další).
 8. Literatura a&nbsp;zdroje &ndash; bibliografie
 7. Přílohy
 
-**:memo: Jiné poznámky**
-* při použití pevných desek je nutné, aby byl na začátku a&nbsp;na konci práce
+**🗒️ Jiné poznámky**
+* Při použití pevných desek je nutné, aby byl na začátku a&nbsp;na konci práce
 (tedy mezi deskami a&nbsp;titulním listem a&nbsp;mezi poslední potištěnou
-stránkou a&nbsp;zadními deskami) jeden prázdný list papíru
-* vzor desek je zde pouze pro&nbsp;doplnění a&nbsp;ukázku! Obyčejně stačí obsluze
+stránkou a&nbsp;zadními deskami) jeden prázdný list papíru. V šablonách je ve výchozím
+stavu zapnutý, ale můžete za to dostat vynadáno v HES, pokud to nejde přímo do tisku.
+* Vzor desek je zde pouze pro&nbsp;doplnění a&nbsp;ukázku! Obyčejně stačí obsluze
 tiskárny pouze sdělit obsah horního řádku, prostředního řádku, jména autora
 v&nbsp;pravé části a&nbsp;roku odevzdání práce v&nbsp;levé části spodního řádku
-požadovaných desek
+požadovaných desek.
 
 ---
 
@@ -47,8 +48,8 @@ Microsoftu (tj. ukládat dokumenty jako soubory `.docx`), nikoliv ODF
 ---
 
 **[2023/2024](https://github.com/jhlade/KP-APP/blob/master/statistiky/2023-2034.md)**
-* :bar_chart: šablony byly využity v&nbsp;80&nbsp;% případů
-* :bar_chart: nástroje: MS Word 81&nbsp;%, LibreOffice 8&nbsp;%, GoogleDocs 8&nbsp;%, ONLYOFFICE 3&nbsp;%
+* 📊 šablony byly využity v&nbsp;80&nbsp;% případů
+* 📊 nástroje: MS Word 81&nbsp;%, LibreOffice 8&nbsp;%, GoogleDocs 8&nbsp;%, ONLYOFFICE 3&nbsp;%
 * pro MS&nbsp;Word byly přidány prázdné stránky (první a&nbsp;poslední) pro použití
 s&nbsp;pevnou vazbou
 * bylo změněno číslování stran příloh z&nbsp;arabských na římské číslice
@@ -64,16 +65,13 @@ se špatně hledají
 
 ---
 
-**2022/2023**
-* zatím žádné připomínky
-
-**2021/2022**
-* :bar_chart: šablony byly využity v&nbsp;70&nbsp;% případů
-* :bar_chart: nástroje: 80&nbsp;% MS Word, 9&nbsp;% LibreOffice, 6&nbsp;% LaTeX,
+**2021/2022** pilotní provoz
+* 📊 šablony byly využity v&nbsp;70&nbsp;% případů
+* 📊 nástroje: 80&nbsp;% MS Word, 9&nbsp;% LibreOffice, 6&nbsp;% LaTeX,
 6&nbsp;% Google Docs
 
 ---
 
-:lollipop: Dílčí dosud nepublikované a&nbsp;experimentální změny jednotlivých
+🍭 Dílčí dosud nepublikované a&nbsp;experimentální změny jednotlivých
 šablon jsou k&nbsp;nalezení v&nbsp;odpovídajících
 [vývojových větvích](https://github.com/jhlade/KP-APP/branches).
